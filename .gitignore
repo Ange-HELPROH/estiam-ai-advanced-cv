@@ -1,0 +1,23 @@
+# Dossier interne de conception et documents de travail (non publiés)
+references/
+*.docx
+
+# Secrets et variables d'environnement
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Fichiers temporaires et système
+*.tmp
+*.bak
+*.swp
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Configuration locale d'éditeurs
+.vscode/
+.idea/

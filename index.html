@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini-formation de 18 minutes : Créer un CV optimisé par IA - Améliorer un CV existant avec ChatGPT.">
+  <title>Créer un CV optimisé par IA | Mini-formation ÉSTIAM</title>
+  <!-- Feuille de style principale (mobile-first, accessible, identité Bleu/Blanc/Violet) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Lien d'évitement pour l'accessibilité au clavier -->
+  <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
+  <!-- En-tête avec navigation principale -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-brand" aria-current="page">
+        <span class="brand-badge">ÉSTIAM AI Advanced</span>
+        <span class="brand-title">Créer un CV optimisé par IA</span>
+        <span class="brand-scope">Périmètre : Améliorer un CV existant avec ChatGPT</span>
+      </a>
+
+      <!-- Bouton d'ouverture/fermeture du menu sur mobile (contrôlé par js/main.js) -->
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="navigation-principale"
+        aria-label="Afficher ou masquer le menu de navigation"
+      >
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+
+      <!-- Navigation vers l'accueil et les trois modules -->
+      <nav id="navigation-principale" class="site-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" aria-current="page">Accueil</a></li>
+          <li><a href="modules/module-1.html" class="nav-link">Module 1</a></li>
+          <li><a href="modules/module-2.html" class="nav-link">Module 2</a></li>
+          <li><a href="modules/module-3.html" class="nav-link">Module 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal avec navigation latérale -->
+  <main id="contenu-principal" class="site-main" tabindex="-1">
+    <div class="container page-layout">
+      <!-- Navigation latérale accessible (repliable sans chevauchement sur mobile, fixe sur ordinateur) -->
+      <aside class="course-sidebar" aria-label="Navigation du parcours et des sections">
+        <div class="sidebar-panel">
+          <button
+            type="button"
+            class="sidebar-toggle"
+            id="sidebar-toggle"
+            aria-expanded="false"
+            aria-controls="sidebar-body"
+          >
+            <span>Sommaire de la formation</span>
+            <span class="sidebar-toggle-badge">Afficher</span>
+          </button>
+
+          <div id="sidebar-body" class="sidebar-body">
+            <div class="sidebar-group">
+              <h2 class="sidebar-heading">Parcours (18 min)</h2>
+              <ul class="sidebar-list">
+                <li>
+                  <a href="index.html" class="sidebar-link" aria-current="page">
+                    <span>Accueil et concept</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="modules/module-1.html" class="sidebar-link">
+                    <span>1. Diagnostiquer son CV</span>
+                    <span class="sidebar-time">5 min</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="modules/module-2.html" class="sidebar-link">
+                    <span>2. Améliorer son CV avec l'IA</span>
+                    <span class="sidebar-time">7 min</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="modules/module-3.html" class="sidebar-link">
+                    <span>3. Vérifier et finaliser</span>
+                    <span class="sidebar-time">6 min</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-group">
+              <h2 class="sidebar-heading">Sections de la page</h2>
+              <ul class="sidebar-list">
+                <li><a href="#presentation" class="sidebar-link">Présentation</a></li>
+                <li><a href="#objectifs" class="sidebar-link">Objectifs mesurables</a></li>
+                <li><a href="#parcours" class="sidebar-link">Les 3 modules</a></li>
+                <li><a href="#vocabulaire" class="sidebar-link">Vocabulaire commun</a></li>
+                <li><a href="#video-capsule" class="sidebar-link">Capsule vidéo</a></li>
+                <li><a href="#ressources" class="sidebar-link">Ressources (PDF)</a></li>
+                <li><a href="#quiz-final" class="sidebar-link">Quiz final</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Zone de contenu principal -->
+      <div class="page-content">
+        <!-- Section de présentation avec les métadonnées pédagogiques validées -->
+        <section id="presentation" class="hero" aria-labelledby="titre-formation">
+          <div class="hero-badges">
+            <span class="hero-eyebrow">Mini-formation - 18 minutes</span>
+            <span class="hero-eyebrow hero-eyebrow-accent">Outil principal : ChatGPT</span>
+          </div>
+          <h1 id="titre-formation" class="hero-title">Créer un CV optimisé par IA</h1>
+          <p class="hero-subtitle">Périmètre : Améliorer un CV existant avec ChatGPT</p>
+          <p class="hero-lead">
+            Cette mini-formation s'adresse aux jeunes de 15 à 30 ans, principalement étudiants et jeunes diplômés recherchant un stage, une alternance ou un premier emploi.
+            Besoin principal : améliorer la clarté, la structure et la présentation de son CV tout en restant fidèle à ses compétences et expériences réelles.
+            Principe directeur : l'IA propose des améliorations, mais l'apprenant vérifie les informations et conserve la décision finale.
+          </p>
+
+          <dl class="meta-grid" aria-label="Informations générales de la formation">
+            <div class="meta-card">
+              <dt class="meta-label">Public cible</dt>
+              <dd class="meta-value">Étudiants et jeunes diplômés (15 à 30 ans)</dd>
+            </div>
+            <div class="meta-card">
+              <dt class="meta-label">Durée pédagogique totale</dt>
+              <dd class="meta-value">18 minutes</dd>
+            </div>
+            <div class="meta-card">
+              <dt class="meta-label">Méthode</dt>
+              <dd class="meta-value">Démonstration guidée et pratique</dd>
+            </div>
+            <div class="meta-card">
+              <dt class="meta-label">Fil rouge</dt>
+              <dd class="meta-value">CV fictif d'Alex Martin (BTS SIO)</dd>
+            </div>
+          </dl>
+
+          <div class="hero-actions">
+            <a href="modules/module-1.html" class="btn btn-primary" rel="next">
+              Commencer le Module 1 : Diagnostiquer son CV (5 minutes) &rarr;
+            </a>
+            <a href="#objectifs" class="btn btn-secondary">
+              Consulter les objectifs pédagogiques
+            </a>
+          </div>
+        </section>
+
+        <!-- Trois objectifs pédagogiques mesurables -->
+        <section id="objectifs" class="content-section" aria-labelledby="titre-objectifs">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Compétences visées</p>
+              <h2 id="titre-objectifs" class="section-title">Trois objectifs pédagogiques mesurables</h2>
+            </div>
+          </div>
+          <p>À la fin de la formation, l'apprenant sera capable de :</p>
+          <ol class="objectives-list">
+            <li class="objective-item">
+              <span class="objective-number" aria-hidden="true">1</span>
+              <p class="objective-text">
+                <strong>Diagnostiquer :</strong> Identifier au moins trois points à améliorer dans un CV existant, notamment sur la clarté, la structure ou la présentation des compétences.
+              </p>
+            </li>
+            <li class="objective-item">
+              <span class="objective-number" aria-hidden="true">2</span>
+              <p class="objective-text">
+                <strong>Formuler un prompt :</strong> Utiliser un prompt structuré dans ChatGPT pour proposer l'amélioration d'au moins deux éléments du CV, sans ajouter d'informations fictives.
+              </p>
+            </li>
+            <li class="objective-item">
+              <span class="objective-number" aria-hidden="true">3</span>
+              <p class="objective-text">
+                <strong>Vérifier et finaliser :</strong> Vérifier les modifications proposées par l'IA à l'aide d'une checklist, puis finaliser une version corrigée du CV.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Liste des trois modules validés -->
+        <section id="parcours" class="content-section" aria-labelledby="titre-parcours">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Structure de la formation</p>
+              <h2 id="titre-parcours" class="section-title">Parcours des trois modules</h2>
+            </div>
+            <p class="section-duration">Durée pédagogique totale : 18 minutes</p>
+          </div>
+
+          <ol class="modules-grid">
+            <!-- Module 1 -->
+            <li class="module-card">
+              <div class="module-card-header">
+                <span class="module-number">Module 1</span>
+                <span class="module-duration">5 minutes</span>
+              </div>
+              <h3 class="module-card-title">
+                <a href="modules/module-1.html" class="module-card-link">Diagnostiquer son CV</a>
+              </h3>
+              <p class="module-card-summary">
+                Analyser le CV fictif d'Alex Martin (étudiant en informatique) selon trois critères (clarté, structure, précision) et identifier trois améliorations prioritaires.
+              </p>
+              <p class="module-card-meta">Format : explication courte, analyse guidée et mini-exercice.</p>
+              <div class="module-card-footer">
+                <a href="modules/module-1.html" class="btn btn-primary">Ouvrir le Module 1</a>
+              </div>
+            </li>
+
+            <!-- Module 2 -->
+            <li class="module-card">
+              <div class="module-card-header">
+                <span class="module-number">Module 2</span>
+                <span class="module-duration">7 minutes</span>
+              </div>
+              <h3 class="module-card-title">
+                <a href="modules/module-2.html" class="module-card-link">Améliorer son CV avec l'IA</a>
+              </h3>
+              <p class="module-card-summary">
+                Construire un prompt structuré en cinq blocs, observer une démonstration réelle avec ChatGPT et comparer les propositions obtenues avec le CV initial.
+              </p>
+              <p class="module-card-meta">Format : démonstration guidée, comparaison avant/après et pratique.</p>
+              <div class="module-card-footer">
+                <a href="modules/module-2.html" class="btn btn-primary">Ouvrir le Module 2</a>
+              </div>
+            </li>
+
+            <!-- Module 3 -->
+            <li class="module-card">
+              <div class="module-card-header">
+                <span class="module-number">Module 3</span>
+                <span class="module-duration">6 minutes</span>
+              </div>
+              <h3 class="module-card-title">
+                <a href="modules/module-3.html" class="module-card-link">Vérifier et finaliser son CV</a>
+              </h3>
+              <p class="module-card-summary">
+                Contrôler l'exactitude, la précision et la pertinence des propositions de ChatGPT, appliquer une checklist de vérification et finaliser le CV corrigé.
+              </p>
+              <p class="module-card-meta">Format : vérification guidée, checklist et exercice de consolidation.</p>
+              <div class="module-card-footer">
+                <a href="modules/module-3.html" class="btn btn-primary">Ouvrir le Module 3</a>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Vocabulaire commun -->
+        <section id="vocabulaire" class="content-section" aria-labelledby="titre-vocabulaire">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Repères terminologiques</p>
+              <h2 id="titre-vocabulaire" class="section-title">Vocabulaire commun de la formation</h2>
+            </div>
+          </div>
+          <dl class="glossary-grid">
+            <div class="glossary-item">
+              <dt class="glossary-term">CV</dt>
+              <dd class="glossary-def">Document qui présente le parcours, les compétences et les expériences d'une personne.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">Intelligence artificielle (IA)</dt>
+              <dd class="glossary-def">Technologie capable notamment de générer et de reformuler du texte à partir d'instructions.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">ChatGPT</dt>
+              <dd class="glossary-def">Assistant d'IA utilisé ici pour proposer des améliorations rédactionnelles.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">Prompt</dt>
+              <dd class="glossary-def">Instruction donnée à un outil d'IA pour obtenir une réponse.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">Compétence</dt>
+              <dd class="glossary-def">Capacité ou savoir-faire que l'on peut expliquer et illustrer.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">Expérience</dt>
+              <dd class="glossary-def">Activité professionnelle, associative, scolaire ou personnelle pertinente pour une candidature.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">Optimisation du CV</dt>
+              <dd class="glossary-def">Amélioration de sa clarté, de sa pertinence et de sa présentation sans modifier la réalité du parcours.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">Vérification</dt>
+              <dd class="glossary-def">Contrôle des informations et des propositions de l'IA avant utilisation.</dd>
+            </div>
+            <div class="glossary-item">
+              <dt class="glossary-term">Confidentialité</dt>
+              <dd class="glossary-def">Protection des informations personnelles partagées ou utilisées.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <!-- Section Vidéo (média non encore disponible) -->
+        <section id="video-capsule" class="content-section" aria-labelledby="titre-video">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Support multimédia</p>
+              <h2 id="titre-video" class="section-title">Capsule vidéo et passage avatar</h2>
+            </div>
+          </div>
+          <div class="placeholder-box">
+            <span class="placeholder-badge">Média en préparation</span>
+            <p class="placeholder-notice">
+              Le passage vidéo avatar sera sélectionné dans le script validé et intégré dans le dossier <code>assets/</code> dès sa production finale. Aucun lecteur vidéo factice n'est activé tant que le fichier média n'est pas disponible.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section Ressources pour le futur Handout PDF -->
+        <section id="ressources" class="content-section" aria-labelledby="titre-ressources">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Support téléchargeable</p>
+              <h2 id="titre-ressources" class="section-title">Ressources pédagogiques (Handout PDF)</h2>
+            </div>
+          </div>
+          <div class="placeholder-box">
+            <span class="placeholder-badge">Handout PDF en préparation</span>
+            <p class="placeholder-notice">
+              La fiche mémo PDF récapitulative (dérivée des scripts validés et reprenant les trois critères de diagnostic, la structure de prompt en cinq blocs et la checklist de vérification) est en cours de production.
+            </p>
+          </div>
+        </section>
+
+        <!-- Emplacement réservé pour le Quiz final -->
+        <section id="quiz-final" class="content-section" aria-labelledby="titre-quiz">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Auto-évaluation</p>
+              <h2 id="titre-quiz" class="section-title">Quiz final de validation des acquis</h2>
+            </div>
+          </div>
+          <div class="placeholder-box">
+            <span class="placeholder-badge">Quiz en préparation</span>
+            <p class="placeholder-notice">
+              Emplacement réservé au quiz final interactif (compris dans l'expérience globale de 18 minutes). Les questions d'évaluation seront intégrées à l'issue du Module 3 après validation définitive.
+            </p>
+          </div>
+
+          <nav class="module-pagination" aria-label="Navigation séquentielle">
+            <span></span>
+            <a href="modules/module-1.html" class="btn btn-primary" rel="next">
+              Suivant : Module 1 - Diagnostiquer son CV (5 minutes) &rarr;
+            </a>
+          </nav>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pied de page professionnel -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Auteur et contexte</h3>
+          <p><strong>Auteur :</strong> Ange TEUFACK</p>
+          <p><strong>Contexte :</strong> Projet scolaire ÉSTIAM - AI Advanced</p>
+          <p><strong>Formation :</strong> Créer un CV optimisé par IA (18 minutes)</p>
+        </div>
+        <div class="footer-col">
+          <h3>Crédits IA et éthique</h3>
+          <p>
+            Outil étudié : ChatGPT. Démonstration réalisée sur le profil entièrement fictif d'Alex Martin (aucune donnée personnelle réelle utilisée). L'apprenant vérifie chaque proposition et conserve la décision finale.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Sources et navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil de la formation</a></li>
+            <li><a href="modules/module-1.html">Module 1 : Diagnostiquer son CV</a></li>
+            <li><a href="modules/module-2.html">Module 2 : Améliorer son CV avec l'IA</a></li>
+            <li><a href="modules/module-3.html">Module 3 : Vérifier et finaliser son CV</a></li>
+            <li><span>Sources documentaires : références de vérification en cours de consolidation (Lab 2).</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Créer un CV optimisé par IA - Améliorer un CV existant avec ChatGPT</p>
+        <p>Public : étudiants et jeunes diplômés (15 à 30 ans) - Durée pédagogique totale : 18 minutes</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

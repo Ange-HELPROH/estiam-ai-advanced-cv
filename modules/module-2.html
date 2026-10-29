@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Module 2 : Améliorer son CV avec l'IA (7 minutes) - Créer un CV optimisé par IA.">
+  <title>Module 2 : Améliorer son CV avec l'IA | Créer un CV optimisé par IA</title>
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Lien d'évitement pour l'accessibilité au clavier -->
+  <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
+  <!-- En-tête avec navigation principale -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-brand">
+        <span class="brand-badge">ÉSTIAM AI Advanced</span>
+        <span class="brand-title">Créer un CV optimisé par IA</span>
+        <span class="brand-scope">Périmètre : Améliorer un CV existant avec ChatGPT</span>
+      </a>
+
+      <!-- Bouton d'ouverture/fermeture du menu sur mobile -->
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="navigation-principale"
+        aria-label="Afficher ou masquer le menu de navigation"
+      >
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+
+      <!-- Navigation vers l'accueil et les trois modules -->
+      <nav id="navigation-principale" class="site-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li><a href="module-1.html" class="nav-link">Module 1</a></li>
+          <li><a href="module-2.html" class="nav-link" aria-current="page">Module 2</a></li>
+          <li><a href="module-3.html" class="nav-link">Module 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal du Module 2 -->
+  <main id="contenu-principal" class="site-main" tabindex="-1">
+    <div class="container">
+      <!-- Fil d'Ariane -->
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <ol class="breadcrumb-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li aria-current="page">Module 2 : Améliorer son CV avec l'IA</li>
+        </ol>
+      </nav>
+
+      <div class="page-layout">
+        <!-- Navigation latérale accessible -->
+        <aside class="course-sidebar" aria-label="Navigation du parcours et des sections du module 2">
+          <div class="sidebar-panel">
+            <button
+              type="button"
+              class="sidebar-toggle"
+              id="sidebar-toggle"
+              aria-expanded="false"
+              aria-controls="sidebar-body"
+            >
+              <span>Sommaire du Module 2</span>
+              <span class="sidebar-toggle-badge">Afficher</span>
+            </button>
+
+            <div id="sidebar-body" class="sidebar-body">
+              <div class="sidebar-group">
+                <h2 class="sidebar-heading">Parcours (18 min)</h2>
+                <ul class="sidebar-list">
+                  <li>
+                    <a href="../index.html" class="sidebar-link">
+                      <span>Accueil et concept</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="module-1.html" class="sidebar-link">
+                      <span>1. Diagnostiquer son CV</span>
+                      <span class="sidebar-time">5 min</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="module-2.html" class="sidebar-link" aria-current="page">
+                      <span>2. Améliorer son CV avec l'IA</span>
+                      <span class="sidebar-time">7 min</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="module-3.html" class="sidebar-link">
+                      <span>3. Vérifier et finaliser</span>
+                      <span class="sidebar-time">6 min</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sidebar-group">
+                <h2 class="sidebar-heading">Sections du Module 2</h2>
+                <ul class="sidebar-list">
+                  <li><a href="#objectif-module" class="sidebar-link">Objectif mesurable</a></li>
+                  <li><a href="#donnees-reference" class="sidebar-link">Données d'Alex Martin</a></li>
+                  <li><a href="#sequence-1" class="sidebar-link">Séquence 1 : Introduction</a></li>
+                  <li><a href="#sequence-2" class="sidebar-link">Séquence 2 : Prompt en 5 blocs</a></li>
+                  <li><a href="#sequence-3" class="sidebar-link">Séquence 3 : Démonstration IA</a></li>
+                  <li><a href="#sequence-4" class="sidebar-link">Séquence 4 : Analyse</a></li>
+                  <li><a href="#sequence-5" class="sidebar-link">Séquence 5 : Exercice guidé</a></li>
+                  <li><a href="#sequence-6" class="sidebar-link">Séquence 6 : Synthèse</a></li>
+                  <li><a href="#supports-module-2" class="sidebar-link">Vidéo et ressources</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Contenu détaillé du Module 2 -->
+        <div class="page-content">
+          <article class="module-detail" aria-labelledby="titre-module">
+            <header class="module-detail-header">
+              <div class="module-badges">
+                <span class="module-number">Module 2 sur 3</span>
+                <span class="module-duration">Durée : 7 minutes</span>
+              </div>
+              <h1 id="titre-module" class="module-detail-title">Améliorer son CV avec l'IA</h1>
+              <p class="module-detail-context">
+                Formation : Créer un CV optimisé par IA - Améliorer un CV existant avec ChatGPT (Prérequis : avoir terminé le Module 1)
+              </p>
+            </header>
+
+            <!-- Objectif pédagogique mesurable -->
+            <section id="objectif-module" aria-labelledby="titre-obj-m2">
+              <h2 id="titre-obj-m2" class="section-title">Objectif pédagogique du module</h2>
+              <div class="objective-item" style="margin-top: 0.75rem;">
+                <span class="objective-number" aria-hidden="true">2</span>
+                <p class="objective-text">
+                  <strong>Objectif mesurable :</strong> Utiliser un prompt structuré dans ChatGPT pour proposer l'amélioration d'au moins deux éléments du CV, sans ajouter d'informations fictives.
+                </p>
+              </div>
+            </section>
+
+            <!-- Données de référence du candidat fictif -->
+            <section id="donnees-reference" class="sequence-block" aria-labelledby="titre-donnees">
+              <div class="sequence-header">
+                <h2 id="titre-donnees" class="sequence-title">Données de référence confirmées du candidat</h2>
+                <span class="sequence-timing">Scénario fil rouge</span>
+              </div>
+              <p class="demo-cv-notice">
+                Mention pédagogique externe : Alex Martin est un profil entièrement fictif utilisé pour les exercices de la formation. Aucune donnée personnelle réelle n'est utilisée.
+              </p>
+              <div class="criteria-grid">
+                <div class="criteria-card">
+                  <h3>Situation et objectif</h3>
+                  <p>
+                    Étudiant en BTS Services informatiques aux organisations (SIO), option SLAM, de 2025 à 2027. Recherche une alternance en développement web.
+                  </p>
+                </div>
+                <div class="criteria-card">
+                  <h3>Compétences connues</h3>
+                  <p>
+                    HTML (structure de pages web), CSS (mise en forme et adaptation aux écrans), JavaScript (notions de base), Git (bases du suivi de versions), travail en autonomie sur projet scolaire.
+                  </p>
+                </div>
+                <div class="criteria-card">
+                  <h3>Projet scolaire (2026)</h3>
+                  <p>
+                    Création individuelle d'un site web de trois pages (accueil, événements et contact) en HTML, CSS et JavaScript, adapté à différentes tailles d'écran. Aucun résultat chiffré connu.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Séquence 1 - Introduction -->
+            <section id="sequence-1" class="sequence-block" aria-labelledby="titre-seq-1">
+              <div class="sequence-header">
+                <h2 id="titre-seq-1" class="sequence-title">Séquence 1 - Introduction</h2>
+                <span class="sequence-timing">0:00 à 0:30</span>
+              </div>
+              <div class="narration-box">
+                <span class="narration-label">Explication pédagogique</span>
+                <p>
+                  Dans le premier module, nous avons repéré plusieurs problèmes dans le CV d'Alex : un titre trop général, des compétences imprécises et un projet scolaire peu détaillé.
+                </p>
+                <p>
+                  Nous allons maintenant découvrir comment demander à ChatGPT de proposer des formulations plus claires, sans inventer d'informations sur le candidat.
+                </p>
+              </div>
+            </section>
+
+            <!-- Séquence 2 - Construire un prompt efficace -->
+            <section id="sequence-2" class="sequence-block" aria-labelledby="titre-seq-2">
+              <div class="sequence-header">
+                <h2 id="titre-seq-2" class="sequence-title">Séquence 2 - Construire un prompt efficace en 5 blocs</h2>
+                <span class="sequence-timing">0:30 à 2:00</span>
+              </div>
+              <p>
+                Pour utiliser ChatGPT efficacement, nous devons lui donner des instructions précises (un <strong>prompt</strong>). Plutôt que d'écrire simplement « Améliore mon CV », nous structurons notre demande en cinq blocs :
+              </p>
+              <ol class="prompt-steps">
+                <li class="prompt-step">
+                  <strong>1. Contexte du candidat :</strong> préciser qu'Alex est étudiant en BTS SIO et recherche une alternance en développement web.
+                </li>
+                <li class="prompt-step">
+                  <strong>2. Informations de référence :</strong> indiquer qu'il utilise HTML, CSS, connaît les bases de JavaScript et de Git, et a réalisé un projet scolaire.
+                </li>
+                <li class="prompt-step">
+                  <strong>3. Éléments à améliorer :</strong> cibler le titre professionnel, la rubrique compétences et la description du projet.
+                </li>
+                <li class="prompt-step">
+                  <strong>4. Contraintes de véracité :</strong> interdire formellement d'inventer des expériences, technologies, diplômes ou résultats chiffrés.
+                </li>
+                <li class="prompt-step">
+                  <strong>5. Format de réponse souhaité :</strong> demander un tableau comparatif (Élément, Version initiale, Proposition améliorée) pour visualiser chaque changement.
+                </li>
+              </ol>
+            </section>
+
+            <!-- Séquence 3 - Démonstration avec ChatGPT -->
+            <section id="sequence-3" class="sequence-block" aria-labelledby="titre-seq-3">
+              <div class="sequence-header">
+                <h2 id="titre-seq-3" class="sequence-title">Séquence 3 - Démonstration réelle avec ChatGPT</h2>
+                <span class="sequence-timing">2:00 à 4:00</span>
+              </div>
+              <p>
+                Voici le prompt réellement envoyé à ChatGPT (test réalisé le 28 octobre 2026) et le tableau comparatif obtenu :
+              </p>
+
+              <div class="prompt-box" role="region" aria-label="Prompt réel envoyé à ChatGPT">Tu es un conseiller spécialisé dans l'amélioration rédactionnelle des CV d'étudiants.
+Je prépare une mini-formation pédagogique et je vais te présenter un CV entièrement fictif.
+Ta mission consiste à améliorer uniquement trois éléments de ce CV :
+1. Le titre professionnel.
+2. La rubrique compétences.
+3. La description du projet scolaire.
+
+Informations confirmées pour ce scénario :
+Alex Martin recherche une alternance en développement web. Il prépare un BTS SIO option SLAM de 2025 à 2027.
+Il connaît HTML, CSS, les bases de JavaScript et les bases de Git.
+En 2026, il a réalisé individuellement un site web scolaire de trois pages : accueil, événements et contact. Le site utilise HTML, CSS et JavaScript et s'adapte à différentes tailles d'écran.
+
+Texte initial :
+Titre : Étudiant
+Compétences : Informatique, Programmation, Bureautique, Travail en équipe
+Projet : J'ai fait un site internet dans le cadre de ma formation.
+
+Consignes impératives :
+- Ne rien inventer.
+- Ne pas attribuer à Alex une expérience professionnelle.
+- Ne pas inventer de résultats chiffrés.
+- Ne pas transformer des connaissances de base en expertise.
+- Conserver des formulations naturelles et professionnelles.
+
+Format attendu :
+Présente un tableau avec trois colonnes : Élément, Version initiale, Proposition améliorée.
+Puis explique brièvement pourquoi chaque modification améliore la précision et la clarté du CV.
+Signale toute information qui devrait être confirmée avant utilisation dans une candidature réelle.</div>
+
+              <h3 style="font-size: 1.05rem; margin-top: 1.25rem;">Tableau comparatif issu de la démonstration</h3>
+              <div class="table-responsive">
+                <table class="comparison-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Élément</th>
+                      <th scope="col">Version initiale</th>
+                      <th scope="col">Proposition obtenue avec ChatGPT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Titre professionnel</strong></td>
+                      <td>Étudiant</td>
+                      <td>Étudiant en BTS SIO - option SLAM | Recherche d'alternance en développement web</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Compétences</strong></td>
+                      <td>Informatique, Programmation, Bureautique, Travail en équipe</td>
+                      <td>Développement web : HTML, CSS, bases de JavaScript. Outils : bases de Git.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Projet scolaire</strong></td>
+                      <td>J'ai fait un site internet dans le cadre de ma formation.</td>
+                      <td>Création d'un site web scolaire - 2026 : réalisation individuelle d'un site de trois pages (accueil, événements et contact) en HTML, CSS et JavaScript. Le site est conçu pour s'adapter à différentes tailles d'écran.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted);">
+                Observation importante : ChatGPT n'a pas conservé « Bureautique » et « Travail en équipe », car aucune précision ne permettait de confirmer les logiciels utilisés ni le contexte collaboratif.
+              </p>
+            </section>
+
+            <!-- Séquence 4 - Comprendre les modifications -->
+            <section id="sequence-4" class="sequence-block" aria-labelledby="titre-seq-4">
+              <div class="sequence-header">
+                <h2 id="titre-seq-4" class="sequence-title">Séquence 4 - Comprendre les modifications</h2>
+                <span class="sequence-timing">4:00 à 5:00</span>
+              </div>
+              <div class="criteria-grid">
+                <div class="criteria-card">
+                  <h3>1. Précision</h3>
+                  <p>
+                    Le nouveau titre indique la formation suivie (BTS SIO, option SLAM), le contrat recherché (alternance) et le domaine visé (développement web).
+                  </p>
+                </div>
+                <div class="criteria-card">
+                  <h3>2. Fidélité au parcours</h3>
+                  <p>
+                    La liste des compétences nomme les technologies connues tout en conservant le niveau « bases » pour JavaScript et Git, sans les transformer en expertise.
+                  </p>
+                </div>
+                <div class="criteria-card">
+                  <h3>3. Vérification indispensable</h3>
+                  <p>
+                    Une phrase bien écrite n'est pas forcément exacte : par exemple, avant d'indiquer que le site s'adapte à plusieurs écrans, il faut confirmer que cela a bien été testé.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Séquence 5 - Exercice guidé -->
+            <section id="sequence-5" class="sequence-block" aria-labelledby="titre-seq-5">
+              <div class="sequence-header">
+                <h2 id="titre-seq-5" class="sequence-title">Séquence 5 - Exercice guidé</h2>
+                <span class="sequence-timing">5:00 à 6:30</span>
+              </div>
+
+              <div class="exercise-card">
+                <span class="exercise-label">Pratique guidée</span>
+                <p>
+                  <strong>À ton tour, construis un prompt pour améliorer deux éléments de ton CV ou du CV fictif proposé.</strong> Ton prompt doit préciser :
+                </p>
+                <ol>
+                  <li>Le contexte du candidat.</li>
+                  <li>Les informations confirmées à utiliser.</li>
+                  <li>Les deux éléments à améliorer.</li>
+                  <li>L'interdiction d'inventer.</li>
+                  <li>Le format souhaité pour la réponse.</li>
+                </ol>
+
+                <p><strong>Modèle d'aide :</strong></p>
+                <div class="prompt-box">Tu es un assistant de rédaction de CV. Voici les informations confirmées du candidat : [informations]. Améliore [élément 1] et [élément 2]. N'ajoute aucune information non fournie. Présente un tableau avant/après et signale les informations manquantes.</div>
+
+                <label for="notes-module-2">
+                  <strong>Rédige ton prompt ci-dessous avant d'afficher les critères de correction :</strong>
+                </label>
+                <textarea
+                  id="notes-module-2"
+                  class="exercise-textarea"
+                  placeholder="Tu es un assistant de rédaction de CV. Voici les informations confirmées..."
+                ></textarea>
+
+                <button
+                  type="button"
+                  class="btn btn-accent"
+                  data-toggle-correction="correction-m2"
+                  aria-expanded="false"
+                  aria-controls="correction-m2"
+                >
+                  Afficher la correction proposée
+                </button>
+
+                <div id="correction-m2" class="correction-panel" hidden>
+                  <h4>Correction pédagogique</h4>
+                  <p>
+                    Pour être valide, ton prompt doit réunir quatre qualités essentielles :
+                  </p>
+                  <ul>
+                    <li>Fournir des <strong>informations concrètes et vérifiées</strong> sur le parcours.</li>
+                    <li>Indiquer explicitement <strong>au moins deux éléments</strong> du CV à améliorer.</li>
+                    <li>Formuler une <strong>interdiction claire d'inventer</strong> des compétences, diplômes ou résultats chiffrés.</li>
+                    <li>Demander un <strong>format structuré</strong> (comme un tableau avant/après) facilitant la relecture critique.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- Séquence 6 - Synthèse -->
+            <section id="sequence-6" class="sequence-block" aria-labelledby="titre-seq-6">
+              <div class="sequence-header">
+                <h2 id="titre-seq-6" class="sequence-title">Séquence 6 - Synthèse et transition</h2>
+                <span class="sequence-timing">6:30 à 7:00</span>
+              </div>
+              <div class="narration-box">
+                <span class="narration-label">À retenir</span>
+                <p>
+                  Nous savons maintenant comment construire un prompt structuré pour améliorer un CV avec ChatGPT. Une consigne précise permet de demander des reformulations ciblées et fidèles.
+                </p>
+                <p>
+                  Mais avant d'utiliser ces propositions dans une candidature réelle, il reste une étape indispensable : vérifier qu'elles sont exactes, cohérentes et adaptées au candidat. C'est l'objet du Module 3.
+                </p>
+              </div>
+            </section>
+
+            <!-- Supports multimédias et ressources en préparation -->
+            <section id="supports-module-2" aria-labelledby="titre-supports-m2" style="margin-top: 1.75rem;">
+              <h2 id="titre-supports-m2" class="section-title">Supports vidéo et fiche PDF du module</h2>
+              <div class="placeholder-box" style="margin-top: 0.75rem;">
+                <span class="placeholder-badge">Supports complémentaires en préparation</span>
+                <p class="placeholder-notice">
+                  La capsule vidéo de démonstration et la fiche récapitulative PDF (Handout) associées à ce module sont en cours de production à partir du script validé.
+                </p>
+              </div>
+            </section>
+
+            <!-- Navigation séquentielle entre les pages -->
+            <nav class="module-pagination" aria-label="Navigation entre les modules">
+              <a href="module-1.html" class="btn btn-secondary" rel="prev">
+                &larr; Précédent : Module 1 - Diagnostiquer son CV (5 minutes)
+              </a>
+              <a href="module-3.html" class="btn btn-primary" rel="next">
+                Suivant : Module 3 - Vérifier et finaliser son CV (6 minutes) &rarr;
+              </a>
+            </nav>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pied de page professionnel -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Auteur et contexte</h3>
+          <p><strong>Auteur :</strong> Ange TEUFACK</p>
+          <p><strong>Contexte :</strong> Projet scolaire ÉSTIAM - AI Advanced</p>
+          <p><strong>Formation :</strong> Créer un CV optimisé par IA (18 minutes)</p>
+        </div>
+        <div class="footer-col">
+          <h3>Crédits IA et éthique</h3>
+          <p>
+            Outil étudié : ChatGPT. Démonstration réalisée sur le profil entièrement fictif d'Alex Martin (aucune donnée personnelle réelle utilisée). L'apprenant vérifie chaque proposition et conserve la décision finale.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Sources et navigation</h3>
+          <ul>
+            <li><a href="../index.html">Accueil de la formation</a></li>
+            <li><a href="module-1.html">Module 1 : Diagnostiquer son CV</a></li>
+            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA</a></li>
+            <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV</a></li>
+            <li><span>Sources documentaires : références de vérification en cours de consolidation (Lab 2).</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Créer un CV optimisé par IA - Améliorer un CV existant avec ChatGPT</p>
+        <p>Public : étudiants et jeunes diplômés (15 à 30 ans) - Durée pédagogique totale : 18 minutes</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
