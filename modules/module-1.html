@@ -57,19 +57,32 @@
         </ol>
       </nav>
 
+      <!-- Progression de navigation correspondant à l'étape réelle (Module 1 sur 3) -->
+      <div class="course-step-bar" role="region" aria-label="Position dans le parcours">
+        <div class="step-bar-info">
+          <span>Étape 1 sur 3 : Diagnostiquer son CV</span>
+          <span class="sidebar-time">(5 min sur 18 min au total)</span>
+        </div>
+        <div class="step-bar-dots" aria-hidden="true">
+          <span class="step-dot is-current"></span>
+          <span class="step-dot"></span>
+          <span class="step-dot"></span>
+        </div>
+      </div>
+
       <div class="page-layout">
-        <!-- Navigation latérale accessible -->
+        <!-- Navigation latérale discrète et repliable -->
         <aside class="course-sidebar" aria-label="Navigation du parcours et des sections du module 1">
           <div class="sidebar-panel">
             <button
               type="button"
               class="sidebar-toggle"
               id="sidebar-toggle"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-controls="sidebar-body"
             >
-              <span>Sommaire du Module 1</span>
-              <span class="sidebar-toggle-badge">Afficher</span>
+              <span>Sommaire</span>
+              <span class="sidebar-toggle-badge">Fermer</span>
             </button>
 
             <div id="sidebar-body" class="sidebar-body">
@@ -103,23 +116,23 @@
               </div>
 
               <div class="sidebar-group">
-                <h2 class="sidebar-heading">Sections du Module 1</h2>
+                <h2 class="sidebar-heading">Étapes du Module 1</h2>
                 <ul class="sidebar-list">
-                  <li><a href="#objectif-module" class="sidebar-link">Objectif mesurable</a></li>
-                  <li><a href="#sequence-1" class="sidebar-link">Séquence 1 : Introduction</a></li>
-                  <li><a href="#sequence-2" class="sidebar-link">Séquence 2 : 3 critères</a></li>
-                  <li><a href="#cv-alex-initial" class="sidebar-link">CV initial d'Alex Martin</a></li>
-                  <li><a href="#sequence-3" class="sidebar-link">Séquence 3 : Analyse guidée</a></li>
-                  <li><a href="#sequence-4" class="sidebar-link">Séquence 4 : Exercice pratique</a></li>
-                  <li><a href="#sequence-5" class="sidebar-link">Séquence 5 : Synthèse</a></li>
-                  <li><a href="#supports-module-1" class="sidebar-link">Vidéo et ressources</a></li>
+                  <li><a href="#objectif-module" class="sidebar-link is-active">Objectif mesurable</a></li>
+                  <li><a href="#sequence-1" class="sidebar-link">Étape 1 : Introduction</a></li>
+                  <li><a href="#sequence-2" class="sidebar-link">Étape 2 : 3 critères</a></li>
+                  <li><a href="#cv-alex-initial" class="sidebar-link">Support : CV d'Alex Martin</a></li>
+                  <li><a href="#sequence-3" class="sidebar-link">Étape 3 : Analyse guidée</a></li>
+                  <li><a href="#sequence-4" class="sidebar-link">Étape 4 : Exercice pratique</a></li>
+                  <li><a href="#sequence-5" class="sidebar-link">Étape 5 : Synthèse</a></li>
+                  <li><a href="#supports-module-1" class="sidebar-link">Médias et ressources</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </aside>
 
-        <!-- Contenu détaillé du Module 1 -->
+        <!-- Contenu détaillé du Module 1 découpé en étapes respirantes -->
         <div class="page-content">
           <article class="module-detail" aria-labelledby="titre-module">
             <header class="module-detail-header">
@@ -131,47 +144,38 @@
               <p class="module-detail-context">
                 Formation : Créer un CV optimisé par IA - Améliorer un CV existant avec ChatGPT (Public : étudiants et jeunes diplômés débutants)
               </p>
-            </header>
 
-            <!-- Objectif pédagogique mesurable du module 1 -->
-            <section id="objectif-module" aria-labelledby="titre-obj-m1">
-              <h2 id="titre-obj-m1" class="section-title">Objectif pédagogique du module</h2>
-              <div class="objective-item" style="margin-top: 0.75rem;">
+              <!-- Objectif pédagogique mesurable du module 1 -->
+              <div id="objectif-module" class="objective-item" aria-label="Objectif pédagogique du module 1">
                 <span class="objective-number" aria-hidden="true">1</span>
                 <p class="objective-text">
                   <strong>Objectif mesurable :</strong> Identifier au moins trois points à améliorer dans un CV existant, notamment sur la clarté, la structure ou la présentation des compétences.
                 </p>
               </div>
-            </section>
+            </header>
 
-            <!-- Séquence 1 - Introduction -->
+            <!-- Étape 1 (Séquence 1) - Introduction -->
             <section id="sequence-1" class="sequence-block" aria-labelledby="titre-seq-1">
               <div class="sequence-header">
-                <h2 id="titre-seq-1" class="sequence-title">Séquence 1 - Introduction</h2>
-                <span class="sequence-timing">0:00 à 0:30</span>
-              </div>
-              <div class="narration-box">
-                <span class="narration-label">Explication pédagogique</span>
-                <p>
-                  Avant de demander à une intelligence artificielle d'améliorer notre CV, commençons par analyser ce que nous avons déjà.
-                </p>
-                <p>
-                  Un CV peut présenter des compétences et des projets intéressants sans forcément les expliquer clairement.
-                </p>
-                <p>
-                  Dans ce premier module, nous allons voir comment repérer trois améliorations prioritaires à partir d'un exemple concret.
-                </p>
-              </div>
-            </section>
-
-            <!-- Séquence 2 - Trois critères pour analyser un CV -->
-            <section id="sequence-2" class="sequence-block" aria-labelledby="titre-seq-2">
-              <div class="sequence-header">
-                <h2 id="titre-seq-2" class="sequence-title">Séquence 2 - Trois critères pour analyser un CV</h2>
-                <span class="sequence-timing">0:30 à 2:00</span>
+                <h2 id="titre-seq-1" class="sequence-title">Étape 1 - Pourquoi diagnostiquer avant d'utiliser l'IA ?</h2>
+                <span class="sequence-timing">Séquence 1 - 0:00 à 0:30</span>
               </div>
               <p>
-                Pour diagnostiquer un CV, nous utilisons trois critères simples. L'objectif n'est pas d'inventer des éléments supplémentaires, mais de mieux présenter les informations existantes :
+                Avant de demander à une intelligence artificielle d'améliorer notre CV, commençons par analyser ce que nous avons déjà.
+              </p>
+              <p>
+                Un CV peut présenter des compétences et des projets intéressants sans forcément les expliquer clairement. Dans ce premier module, nous allons voir comment repérer trois améliorations prioritaires à partir d'un exemple concret.
+              </p>
+            </section>
+
+            <!-- Étape 2 (Séquence 2) - Trois critères pour analyser un CV -->
+            <section id="sequence-2" class="sequence-block" aria-labelledby="titre-seq-2">
+              <div class="sequence-header">
+                <h2 id="titre-seq-2" class="sequence-title">Étape 2 - Trois critères simples pour analyser un CV</h2>
+                <span class="sequence-timing">Séquence 2 - 0:30 à 2:00</span>
+              </div>
+              <p>
+                Un bon diagnostic consiste à repérer les passages imprécis et à se demander comment les expliquer plus clairement. L'objectif n'est pas d'inventer des éléments supplémentaires, mais de mieux présenter les informations existantes :
               </p>
 
               <div class="criteria-grid">
@@ -190,15 +194,24 @@
                 <div class="criteria-card">
                   <h3>3. Précision</h3>
                   <p>
-                    Indiquer simplement « programmation » ne dit pas quels langages ou outils le candidat connaît réellement. Repérons les passages imprécis.
+                    Indiquer simplement « programmation » ne dit pas quels langages ou outils le candidat connaît réellement.
                   </p>
                 </div>
+              </div>
+              <div class="vigilance-box" role="note">
+                <span class="vigilance-label">Point de vigilance</span>
+                <p>
+                  Diagnostiquer son CV ne consiste jamais à inventer des compétences supplémentaires, mais à repérer ce qui existe déjà et mérite d'être expliqué avec précision.
+                </p>
               </div>
             </section>
 
             <!-- Support de démonstration : CV initial d'Alex Martin (avec mention externe obligatoire) -->
-            <section id="cv-alex-initial" aria-labelledby="titre-cv-initial">
-              <h2 id="titre-cv-initial" class="section-title">Support d'étude : CV initial d'Alex Martin</h2>
+            <section id="cv-alex-initial" class="sequence-block" aria-labelledby="titre-cv-initial">
+              <div class="sequence-header">
+                <h2 id="titre-cv-initial" class="sequence-title">Support d'étude - CV initial d'Alex Martin</h2>
+                <span class="sequence-timing">Document fil rouge</span>
+              </div>
               <!--
                 Conformément aux consignes pédagogiques, la mention indiquant qu'Alex Martin
                 est un candidat fictif est placée dans <figcaption class="demo-cv-notice">,
@@ -254,34 +267,37 @@
               </figure>
             </section>
 
-            <!-- Séquence 3 - Analyse guidée du CV d'Alex Martin -->
+            <!-- Étape 3 (Séquence 3) - Analyse guidée du CV d'Alex Martin -->
             <section id="sequence-3" class="sequence-block" aria-labelledby="titre-seq-3">
               <div class="sequence-header">
-                <h2 id="titre-seq-3" class="sequence-title">Séquence 3 - Analyse guidée du CV d'Alex Martin</h2>
-                <span class="sequence-timing">2:00 à 3:30</span>
+                <h2 id="titre-seq-3" class="sequence-title">Étape 3 - Analyse guidée du CV d'Alex Martin</h2>
+                <span class="sequence-timing">Séquence 3 - 2:00 à 3:30</span>
               </div>
+              <p>
+                Alex est étudiant en informatique et recherche une alternance. En appliquant nos trois critères à son CV initial, nous repérons quatre pistes d'amélioration sans inventer une seule expérience :
+              </p>
               <div class="narration-box">
-                <span class="narration-label">Observations guidées</span>
+                <span class="narration-label">Points repérés lors de l'analyse</span>
                 <p>
-                  <strong>1. Le titre :</strong> Son titre indique simplement « Étudiant ». Pourtant, nous savons qu'il recherche une alternance en informatique. Son titre pourrait donc être plus précis.
+                  <strong>1. Le titre :</strong> son titre indique simplement « Étudiant ». Pourtant, nous savons qu'il recherche une alternance en informatique. Son titre pourrait donc être plus précis.
                 </p>
                 <p>
-                  <strong>2. Les compétences :</strong> Dans sa rubrique compétences, il indique « Informatique », « Programmation », « Bureautique » et « Travail en équipe ». Ces expressions sont générales. Pour les améliorer, il faudra lui demander quelles technologies il maîtrise réellement et comment il peut illustrer ses compétences.
+                  <strong>2. Les compétences :</strong> il indique « Informatique », « Programmation », « Bureautique » et « Travail en équipe ». Ces expressions sont générales : il faudra préciser quelles technologies il maîtrise réellement.
                 </p>
                 <p>
-                  <strong>3. Le projet scolaire :</strong> Il écrit : « J'ai fait un site internet dans le cadre de ma formation. » Cette phrase confirme qu'il a réalisé un projet, mais elle n'explique pas son rôle, les outils utilisés ni les fonctionnalités développées.
+                  <strong>3. Le projet scolaire :</strong> il écrit « J'ai fait un site internet dans le cadre de ma formation. » Cette phrase confirme qu'il a réalisé un projet, mais n'explique pas son rôle, les outils utilisés ni les fonctionnalités développées.
                 </p>
                 <p>
-                  <strong>4. L'ordre des rubriques :</strong> Les centres d'intérêt apparaissent avant les compétences et la formation. Nous pourrons réfléchir à un ordre qui met mieux en valeur les informations importantes pour cette candidature.
+                  <strong>4. L'ordre des rubriques :</strong> les centres d'intérêt apparaissent avant les compétences et la formation. Un ordre plus pertinent mettra en valeur les informations essentielles pour cette candidature.
                 </p>
               </div>
             </section>
 
-            <!-- Séquence 4 - Exercice pratique -->
+            <!-- Étape 4 (Séquence 4) - Exercice pratique -->
             <section id="sequence-4" class="sequence-block" aria-labelledby="titre-seq-4">
               <div class="sequence-header">
-                <h2 id="titre-seq-4" class="sequence-title">Séquence 4 - Exercice pratique</h2>
-                <span class="sequence-timing">3:30 à 4:30</span>
+                <h2 id="titre-seq-4" class="sequence-title">Étape 4 - Exercice pratique</h2>
+                <span class="sequence-timing">Séquence 4 - 3:30 à 4:30</span>
               </div>
 
               <div class="exercise-card">
@@ -328,11 +344,11 @@
               </div>
             </section>
 
-            <!-- Séquence 5 - Correction, synthèse et transition -->
+            <!-- Étape 5 (Séquence 5) - Synthèse et transition -->
             <section id="sequence-5" class="sequence-block" aria-labelledby="titre-seq-5">
               <div class="sequence-header">
-                <h2 id="titre-seq-5" class="sequence-title">Séquence 5 - Synthèse et transition</h2>
-                <span class="sequence-timing">4:30 à 5:00</span>
+                <h2 id="titre-seq-5" class="sequence-title">Étape 5 - Synthèse et transition</h2>
+                <span class="sequence-timing">Séquence 5 - 4:30 à 5:00</span>
               </div>
               <div class="narration-box">
                 <span class="narration-label">À retenir</span>
@@ -345,14 +361,31 @@
               </div>
             </section>
 
-            <!-- Supports multimédias et ressources en préparation -->
-            <section id="supports-module-1" aria-labelledby="titre-supports-m1" style="margin-top: 1.75rem;">
-              <h2 id="titre-supports-m1" class="section-title">Supports vidéo et fiche PDF du module</h2>
-              <div class="placeholder-box" style="margin-top: 0.75rem;">
-                <span class="placeholder-badge">Supports complémentaires en préparation</span>
-                <p class="placeholder-notice">
-                  La capsule vidéo et la fiche récapitulative PDF (Handout) associées à ce module sont en cours de production à partir du script validé.
-                </p>
+            <!-- Emplacements discrets pour médias et ressources facultatifs -->
+            <section id="supports-module-1" class="sequence-block" aria-labelledby="titre-supports-m1">
+              <div class="sequence-header">
+                <h2 id="titre-supports-m1" class="sequence-title">Médias et ressources du Module 1</h2>
+                <span class="sequence-timing">Compléments</span>
+              </div>
+              <div class="discreet-resources-grid">
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Vidéo facultative :</strong> capsule commentée du diagnostic dans <code>assets/</code>.
+                  </p>
+                </div>
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Illustration annotée :</strong> visuel du CV initial d'Alex Martin avec repères visuels.
+                  </p>
+                </div>
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Fiche mémo PDF :</strong> grille des 3 critères de diagnostic téléchargeable.
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -376,25 +409,25 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h3>Auteur et contexte</h3>
+          <h3>Auteur et contexte académique</h3>
           <p><strong>Auteur :</strong> Ange TEUFACK</p>
           <p><strong>Contexte :</strong> Projet scolaire ÉSTIAM - AI Advanced</p>
           <p><strong>Formation :</strong> Créer un CV optimisé par IA (18 minutes)</p>
         </div>
         <div class="footer-col">
-          <h3>Crédits IA et éthique</h3>
+          <h3>Mentions IA et crédits</h3>
           <p>
             Outil étudié : ChatGPT. Démonstration réalisée sur le profil entièrement fictif d'Alex Martin (aucune donnée personnelle réelle utilisée). L'apprenant vérifie chaque proposition et conserve la décision finale.
           </p>
         </div>
         <div class="footer-col">
-          <h3>Sources et navigation</h3>
+          <h3>Navigation et sources</h3>
           <ul>
             <li><a href="../index.html">Accueil de la formation</a></li>
-            <li><a href="module-1.html">Module 1 : Diagnostiquer son CV</a></li>
-            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA</a></li>
-            <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV</a></li>
-            <li><span>Sources documentaires : références de vérification en cours de consolidation (Lab 2).</span></li>
+            <li><a href="module-1.html">Module 1 : Diagnostiquer son CV (5 min)</a></li>
+            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA (7 min)</a></li>
+            <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV (6 min)</a></li>
+            <li><span>Sources documentaires : en cours de consolidation (Lab 2).</span></li>
           </ul>
         </div>
       </div>

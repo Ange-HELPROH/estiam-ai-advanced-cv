@@ -5,10 +5,12 @@
  * Responsabilités techniques :
  * 1. Activer l'amélioration progressive (.js-enabled).
  * 2. Gérer l'ouverture/fermeture accessible du menu principal sur mobile (#nav-toggle).
- * 3. Gérer le sommaire latéral repliable sur mobile/tablette (#sidebar-toggle) sans chevauchement.
+ * 3. Gérer le bouton "Sommaire" repliable sur mobile, tablette et ordinateur (#sidebar-toggle)
+ *    ainsi que l'indication de la section active dans la barre latérale.
  * 4. Gérer l'affichage/masquage des corrigés d'exercices pédagogiques ([data-toggle-correction]).
  * 5. Mettre à jour le compteur de la checklist de vérification du Module 3 ([data-checklist-item]).
- * 6. Déplacer explicitement le focus sur la zone principale via le lien d'évitement.
+ * 6. Gérer la copie fonctionnelle des modèles de la bibliothèque de prompts ([data-copy-prompt]).
+ * 7. Déplacer explicitement le focus sur la zone principale via le lien d'évitement.
  */
 
 (function () {
@@ -54,7 +56,7 @@
     });
   }
 
-  // 3. Navigation latérale (sommaire des modules et sections) repliable sur mobile/tablette
+  // 3. Navigation latérale ("Sommaire") repliable et suivi de la section active
   const sidebarToggle = document.getElementById("sidebar-toggle");
   const sidebarBody = document.getElementById("sidebar-body");
   const desktopSidebarQuery = window.matchMedia("(min-width: 62rem)");
@@ -71,18 +73,15 @@
     sidebarBody.classList.toggle("is-collapsed", !isExpanded);
     const badge = sidebarToggle.querySelector(".sidebar-toggle-badge");
     if (badge) {
-      badge.textContent = isExpanded ? "Masquer" : "Afficher";
+      badge.textContent = isExpanded ? "Fermer" : "Ouvrir";
     }
   }
 
   if (sidebarToggle && sidebarBody) {
-    // Sur mobile/tablette (< 992px), le sommaire est replié par défaut pour éviter tout encombrement
+    // Sur mobile/tablette (< 992px), replié par défaut ; sur ordinateur (>= 992px), déplié par défaut
     setSidebarState(desktopSidebarQuery.matches);
 
     sidebarToggle.addEventListener("click", function () {
-      if (desktopSidebarQuery.matches) {
-        return;
-      }
       const isExpanded = sidebarToggle.getAttribute("aria-expanded") === "true";
       setSidebarState(!isExpanded);
     });
@@ -91,15 +90,52 @@
       setSidebarState(event.matches);
     });
 
-    // Referme le sommaire mobile lorsqu'un lien d'ancrage interne est activé
-    const sidebarLinks = sidebarBody.querySelectorAll('a[href^="#"]');
-    sidebarLinks.forEach(function (link) {
+    // Referme le sommaire sur mobile/tablette lorsqu'un lien d'ancrage interne est activé
+    const sidebarAnchorLinks = sidebarBody.querySelectorAll('a[href^="#"]');
+    sidebarAnchorLinks.forEach(function (link) {
       link.addEventListener("click", function () {
+        sidebarAnchorLinks.forEach(function (item) {
+          item.classList.remove("is-active");
+        });
+        link.classList.add("is-active");
         if (!desktopSidebarQuery.matches) {
           setSidebarState(false);
         }
       });
     });
+
+    // Mise en évidence automatique de la section active lors du défilement
+    if ("IntersectionObserver" in window && sidebarAnchorLinks.length > 0) {
+      const sectionMap = new Map();
+      sidebarAnchorLinks.forEach(function (link) {
+        const targetId = link.getAttribute("href").slice(1);
+        const sectionEl = document.getElementById(targetId);
+        if (sectionEl) {
+          sectionMap.set(sectionEl, link);
+        }
+      });
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              const activeLink = sectionMap.get(entry.target);
+              if (activeLink) {
+                sidebarAnchorLinks.forEach(function (item) {
+                  item.classList.remove("is-active");
+                });
+                activeLink.classList.add("is-active");
+              }
+            }
+          });
+        },
+        { rootMargin: "-20% 0px -65% 0px", threshold: 0 }
+      );
+
+      sectionMap.forEach(function (_link, sectionEl) {
+        observer.observe(sectionEl);
+      });
+    }
   }
 
   // 4. Boutons de révélation des corrigés d'exercices pédagogiques
@@ -149,7 +185,68 @@
     updateChecklistCount();
   }
 
-  // 6. Gestion du lien d'évitement : déplace explicitement le focus sur <main>
+  // 6. Boutons "Copier le prompt" de la bibliothèque de prompts réutilisables
+  const copyPromptButtons = document.querySelectorAll("[data-copy-prompt]");
+
+  /**
+   * Copie un texte dans le presse-papiers avec solution de repli compatible.
+   * @param {string} text - Texte du prompt à copier.
+   * @returns {Promise<boolean>}
+   */
+  function copyTextToClipboard(text) {
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+      return navigator.clipboard.writeText(text).then(
+        function () {
+          return true;
+        },
+        function () {
+          return fallbackCopyText(text);
+        }
+      );
+    }
+    return Promise.resolve(fallbackCopyText(text));
+  }
+
+  function fallbackCopyText(text) {
+    try {
+      const tempArea = document.createElement("textarea");
+      tempArea.value = text;
+      tempArea.setAttribute("readonly", "");
+      tempArea.style.position = "fixed";
+      tempArea.style.opacity = "0";
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      const succeeded = document.execCommand("copy");
+      document.body.removeChild(tempArea);
+      return Boolean(succeeded);
+    } catch (_err) {
+      return false;
+    }
+  }
+
+  copyPromptButtons.forEach(function (button) {
+    const defaultLabel = button.textContent.trim();
+    button.addEventListener("click", function () {
+      const targetId = button.getAttribute("data-copy-prompt");
+      const sourceEl = document.getElementById(targetId);
+      if (!sourceEl) {
+        return;
+      }
+      const promptText = sourceEl.textContent.trim();
+      copyTextToClipboard(promptText).then(function (ok) {
+        if (ok) {
+          button.textContent = "Prompt copié";
+          button.classList.add("is-copied");
+          setTimeout(function () {
+            button.textContent = defaultLabel;
+            button.classList.remove("is-copied");
+          }, 2200);
+        }
+      });
+    });
+  });
+
+  // 7. Gestion du lien d'évitement : déplace explicitement le focus sur <main>
   const skipLink = document.querySelector(".skip-link");
   const mainContent = document.getElementById("contenu-principal");
 

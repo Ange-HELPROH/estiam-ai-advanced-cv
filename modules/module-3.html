@@ -57,19 +57,32 @@
         </ol>
       </nav>
 
+      <!-- Progression de navigation correspondant à l'étape réelle (Module 3 sur 3) -->
+      <div class="course-step-bar" role="region" aria-label="Position dans le parcours">
+        <div class="step-bar-info">
+          <span>Étape 3 sur 3 : Vérifier et finaliser son CV</span>
+          <span class="sidebar-time">(6 min sur 18 min au total)</span>
+        </div>
+        <div class="step-bar-dots" aria-hidden="true">
+          <span class="step-dot is-past"></span>
+          <span class="step-dot is-past"></span>
+          <span class="step-dot is-current"></span>
+        </div>
+      </div>
+
       <div class="page-layout">
-        <!-- Navigation latérale accessible -->
+        <!-- Navigation latérale discrète et repliable -->
         <aside class="course-sidebar" aria-label="Navigation du parcours et des sections du module 3">
           <div class="sidebar-panel">
             <button
               type="button"
               class="sidebar-toggle"
               id="sidebar-toggle"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-controls="sidebar-body"
             >
-              <span>Sommaire du Module 3</span>
-              <span class="sidebar-toggle-badge">Afficher</span>
+              <span>Sommaire</span>
+              <span class="sidebar-toggle-badge">Fermer</span>
             </button>
 
             <div id="sidebar-body" class="sidebar-body">
@@ -103,15 +116,15 @@
               </div>
 
               <div class="sidebar-group">
-                <h2 class="sidebar-heading">Sections du Module 3</h2>
+                <h2 class="sidebar-heading">Étapes du Module 3</h2>
                 <ul class="sidebar-list">
-                  <li><a href="#objectif-module" class="sidebar-link">Objectif mesurable</a></li>
-                  <li><a href="#sequence-1" class="sidebar-link">Séquence 1 : Introduction</a></li>
-                  <li><a href="#sequence-2" class="sidebar-link">Séquence 2 : 3 contrôles</a></li>
-                  <li><a href="#sequence-3" class="sidebar-link">Séquence 3 : Vérification IA</a></li>
-                  <li><a href="#sequence-4" class="sidebar-link">Séquence 4 : Avant / Après</a></li>
-                  <li><a href="#sequence-5" class="sidebar-link">Séquence 5 : Exercice &amp; Checklist</a></li>
-                  <li><a href="#sequence-6" class="sidebar-link">Séquence 6 : Conclusion</a></li>
+                  <li><a href="#objectif-module" class="sidebar-link is-active">Objectif mesurable</a></li>
+                  <li><a href="#sequence-1" class="sidebar-link">Étape 1 : Introduction</a></li>
+                  <li><a href="#sequence-2" class="sidebar-link">Étape 2 : 3 contrôles</a></li>
+                  <li><a href="#sequence-3" class="sidebar-link">Étape 3 : Vérification IA</a></li>
+                  <li><a href="#sequence-4" class="sidebar-link">Étape 4 : Avant / Après</a></li>
+                  <li><a href="#sequence-5" class="sidebar-link">Étape 5 : Exercice &amp; Checklist</a></li>
+                  <li><a href="#sequence-6" class="sidebar-link">Étape 6 : Conclusion</a></li>
                   <li><a href="#quiz-final" class="sidebar-link">Quiz final &amp; Ressources</a></li>
                 </ul>
               </div>
@@ -119,7 +132,7 @@
           </div>
         </aside>
 
-        <!-- Contenu détaillé du Module 3 -->
+        <!-- Contenu détaillé du Module 3 découpé par étapes courtes -->
         <div class="page-content">
           <article class="module-detail" aria-labelledby="titre-module">
             <header class="module-detail-header">
@@ -131,41 +144,35 @@
               <p class="module-detail-context">
                 Formation : Créer un CV optimisé par IA - Améliorer un CV existant avec ChatGPT (Prérequis : avoir réalisé les Modules 1 et 2)
               </p>
-            </header>
 
-            <!-- Objectif pédagogique mesurable -->
-            <section id="objectif-module" aria-labelledby="titre-obj-m3">
-              <h2 id="titre-obj-m3" class="section-title">Objectif pédagogique du module</h2>
-              <div class="objective-item" style="margin-top: 0.75rem;">
+              <!-- Objectif pédagogique mesurable -->
+              <div id="objectif-module" class="objective-item" aria-label="Objectif pédagogique du module 3">
                 <span class="objective-number" aria-hidden="true">3</span>
                 <p class="objective-text">
                   <strong>Objectif mesurable :</strong> Vérifier les modifications proposées par ChatGPT à l'aide d'une checklist, puis finaliser une version corrigée du CV.
                 </p>
               </div>
-            </section>
+            </header>
 
-            <!-- Séquence 1 - Introduction -->
+            <!-- Étape 1 (Séquence 1) - Introduction -->
             <section id="sequence-1" class="sequence-block" aria-labelledby="titre-seq-1">
               <div class="sequence-header">
-                <h2 id="titre-seq-1" class="sequence-title">Séquence 1 - Introduction</h2>
-                <span class="sequence-timing">0:00 à 0:30</span>
+                <h2 id="titre-seq-1" class="sequence-title">Étape 1 - Pourquoi ne pas utiliser les réponses de l'IA sans relecture ?</h2>
+                <span class="sequence-timing">Séquence 1 - 0:00 à 0:30</span>
               </div>
-              <div class="narration-box">
-                <span class="narration-label">Explication pédagogique</span>
-                <p>
-                  Dans le module précédent, nous avons utilisé ChatGPT pour améliorer le titre, les compétences et la description du projet scolaire d'Alex Martin.
-                </p>
-                <p>
-                  Les propositions sont plus précises, mais pouvons-nous les utiliser directement ? Pas encore. Une intelligence artificielle peut produire des phrases convaincantes sans garantir leur exactitude. Nous allons donc apprendre à vérifier les modifications avant de finaliser le CV.
-                </p>
-              </div>
+              <p>
+                Dans le module précédent, nous avons utilisé ChatGPT pour améliorer le titre, les compétences et la description du projet scolaire d'Alex Martin.
+              </p>
+              <p>
+                Les propositions sont plus précises, mais pouvons-nous les utiliser directement ? Pas encore. Une intelligence artificielle peut produire des phrases convaincantes sans garantir leur exactitude. Nous allons donc apprendre à vérifier les modifications avant de finaliser le CV.
+              </p>
             </section>
 
-            <!-- Séquence 2 - Les trois contrôles essentiels -->
+            <!-- Étape 2 (Séquence 2) - Les trois contrôles essentiels -->
             <section id="sequence-2" class="sequence-block" aria-labelledby="titre-seq-2">
               <div class="sequence-header">
-                <h2 id="titre-seq-2" class="sequence-title">Séquence 2 - Les trois contrôles essentiels</h2>
-                <span class="sequence-timing">0:30 à 1:45</span>
+                <h2 id="titre-seq-2" class="sequence-title">Étape 2 - Les trois contrôles essentiels</h2>
+                <span class="sequence-timing">Séquence 2 - 0:30 à 1:45</span>
               </div>
               <p>
                 Pour vérifier les propositions de l'IA, nous appliquons trois contrôles complémentaires :
@@ -192,11 +199,11 @@
               </div>
             </section>
 
-            <!-- Séquence 3 - Vérifier le résultat ChatGPT -->
+            <!-- Étape 3 (Séquence 3) - Vérifier le résultat ChatGPT -->
             <section id="sequence-3" class="sequence-block" aria-labelledby="titre-seq-3">
               <div class="sequence-header">
-                <h2 id="titre-seq-3" class="sequence-title">Séquence 3 - Vérifier le résultat ChatGPT</h2>
-                <span class="sequence-timing">1:45 à 3:15</span>
+                <h2 id="titre-seq-3" class="sequence-title">Étape 3 - Vérifier le résultat ChatGPT</h2>
+                <span class="sequence-timing">Séquence 3 - 1:45 à 3:15</span>
               </div>
               <p>
                 Reprenons les trois propositions obtenues lors de notre démonstration et confrontons-les aux données de référence d'Alex :
@@ -237,17 +244,17 @@
               </p>
             </section>
 
-            <!-- Séquence 4 - Préparer la version corrigée et Comparaison Avant / Après -->
+            <!-- Étape 4 (Séquence 4) - Préparer la version corrigée et Comparaison Avant / Après -->
             <section id="sequence-4" class="sequence-block" aria-labelledby="titre-seq-4">
               <div class="sequence-header">
-                <h2 id="titre-seq-4" class="sequence-title">Séquence 4 - Comparaison Avant / Après et version finalisée</h2>
-                <span class="sequence-timing">3:15 à 4:15</span>
+                <h2 id="titre-seq-4" class="sequence-title">Étape 4 - Comparaison Avant / Après et version finalisée</h2>
+                <span class="sequence-timing">Séquence 4 - 3:15 à 4:15</span>
               </div>
               <p>
                 Après vérification, nous retenons uniquement les formulations confirmées et réorganisons les rubriques pour mettre en valeur la formation, les compétences et le projet scolaire avant les centres d'intérêt.
               </p>
 
-              <h3 style="font-size: 1.05rem; margin-top: 1.25rem;">Synthèse des modifications Avant / Après</h3>
+              <h3 class="subheading">Synthèse des modifications Avant / Après</h3>
               <div class="table-responsive">
                 <table class="comparison-table">
                   <thead>
@@ -283,15 +290,15 @@
               </div>
 
               <!-- Comparaison visuelle complète des deux CV fictifs avec mention externe -->
-              <h3 style="font-size: 1.05rem; margin-top: 1.5rem;">Comparaison complète : CV initial et CV final d'Alex Martin</h3>
+              <h3 class="subheading">Comparaison complète : CV initial et CV final d'Alex Martin</h3>
               <p class="demo-cv-notice">
                 Mention pédagogique externe : Alex Martin est un personnage fictif. Les deux documents présentés ci-dessous servent exclusivement à la démonstration pédagogique et ne contiennent aucune donnée personnelle réelle.
               </p>
 
               <div class="cv-comparison-grid">
                 <!-- CV Initial -->
-                <figure class="demo-cv-container" style="margin: 0;" aria-labelledby="legende-cv-avant">
-                  <figcaption id="legende-cv-avant" style="font-weight: 700; color: var(--color-text-muted);">
+                <figure class="demo-cv-container" aria-labelledby="legende-cv-avant">
+                  <figcaption id="legende-cv-avant" class="cv-caption-before">
                     Avant : CV initial (Diagnostic du Module 1)
                   </figcaption>
                   <div class="demo-cv-document" role="region" aria-label="CV initial d'Alex Martin">
@@ -334,8 +341,8 @@
                 </figure>
 
                 <!-- CV Final corrigé -->
-                <figure class="demo-cv-container" style="margin: 0;" aria-labelledby="legende-cv-apres">
-                  <figcaption id="legende-cv-apres" style="font-weight: 700; color: var(--color-primary);">
+                <figure class="demo-cv-container" aria-labelledby="legende-cv-apres">
+                  <figcaption id="legende-cv-apres" class="cv-caption-after">
                     Après : CV final vérifié (Module 3)
                   </figcaption>
                   <div class="demo-cv-document" role="region" aria-label="CV final amélioré et vérifié d'Alex Martin">
@@ -382,11 +389,11 @@
               </div>
             </section>
 
-            <!-- Séquence 5 - Exercice de vérification et Checklist -->
+            <!-- Étape 5 (Séquence 5) - Exercice de vérification et Checklist -->
             <section id="sequence-5" class="sequence-block" aria-labelledby="titre-seq-5">
               <div class="sequence-header">
-                <h2 id="titre-seq-5" class="sequence-title">Séquence 5 - Exercice de vérification et Checklist</h2>
-                <span class="sequence-timing">4:15 à 5:30</span>
+                <h2 id="titre-seq-5" class="sequence-title">Étape 5 - Exercice de vérification et Checklist</h2>
+                <span class="sequence-timing">Séquence 5 - 4:15 à 5:30</span>
               </div>
 
               <div class="exercise-card">
@@ -431,10 +438,10 @@
               </div>
 
               <!-- Checklist officielle de vérification du CV (10 points) -->
-              <div class="exercise-card" style="margin-top: 1.25rem;">
+              <div class="exercise-card">
                 <span class="exercise-label">Outil pratique</span>
-                <h3 style="margin: 0.25rem 0 0.5rem; font-size: 1.15rem;">Checklist de vérification du CV avant envoi</h3>
-                <p style="margin: 0 0 0.75rem; font-size: 0.925rem; color: var(--color-text-muted);">
+                <h3 class="subheading">Checklist de vérification du CV avant envoi</h3>
+                <p class="muted-note">
                   Coche chaque critère pour contrôler les propositions de l'IA et valider ta version finale :
                 </p>
                 <ul class="checklist-group">
@@ -485,11 +492,11 @@
               </div>
             </section>
 
-            <!-- Séquence 6 - Synthèse et conclusion -->
+            <!-- Étape 6 (Séquence 6) - Synthèse et conclusion -->
             <section id="sequence-6" class="sequence-block" aria-labelledby="titre-seq-6">
               <div class="sequence-header">
-                <h2 id="titre-seq-6" class="sequence-title">Séquence 6 - Synthèse et conclusion de la formation</h2>
-                <span class="sequence-timing">5:30 à 6:00</span>
+                <h2 id="titre-seq-6" class="sequence-title">Étape 6 - Synthèse et conclusion de la formation</h2>
+                <span class="sequence-timing">Séquence 6 - 5:30 à 6:00</span>
               </div>
               <div class="narration-box">
                 <span class="narration-label">Conclusion des 3 modules</span>
@@ -505,20 +512,31 @@
               </div>
             </section>
 
-            <!-- Emplacement pour le Quiz final et les ressources (sans simuler un quiz fonctionnel) -->
-            <section id="quiz-final" aria-labelledby="titre-quiz-m3" style="margin-top: 1.75rem;">
-              <h2 id="titre-quiz-m3" class="section-title">Quiz final et ressources téléchargeables</h2>
-              <div class="placeholder-box" style="margin-top: 0.75rem;">
-                <span class="placeholder-badge">Quiz final en préparation</span>
-                <p class="placeholder-notice">
-                  Emplacement réservé au quiz final d'évaluation des acquis des trois modules. Aucun formulaire de quiz factice n'est affiché tant que le questionnaire validé n'est pas fourni.
-                </p>
+            <!-- Emplacements discrets pour le Quiz final et les ressources -->
+            <section id="quiz-final" class="sequence-block" aria-labelledby="titre-quiz-m3">
+              <div class="sequence-header">
+                <h2 id="titre-quiz-m3" class="sequence-title">Quiz final et ressources téléchargeables</h2>
+                <span class="sequence-timing">Fin de parcours</span>
               </div>
-              <div class="placeholder-box" style="margin-top: 0.75rem;">
-                <span class="placeholder-badge">Vidéo et Handout PDF en préparation</span>
-                <p class="placeholder-notice">
-                  La capsule vidéo et la fiche mémo récapitulative PDF (Handout) seront mises à disposition dans la section Ressources dès la finalisation de leur production.
-                </p>
+              <div class="discreet-resources-grid">
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Quiz final :</strong> emplacement réservé au questionnaire final d'évaluation des acquis des 3 modules.
+                  </p>
+                </div>
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Handout PDF :</strong> fiche mémo récapitulative téléchargeable dans <code>assets/</code>.
+                  </p>
+                </div>
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Capsule vidéo :</strong> synthèse vidéo de clôture dans <code>assets/</code>.
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -542,25 +560,25 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h3>Auteur et contexte</h3>
+          <h3>Auteur et contexte académique</h3>
           <p><strong>Auteur :</strong> Ange TEUFACK</p>
           <p><strong>Contexte :</strong> Projet scolaire ÉSTIAM - AI Advanced</p>
           <p><strong>Formation :</strong> Créer un CV optimisé par IA (18 minutes)</p>
         </div>
         <div class="footer-col">
-          <h3>Crédits IA et éthique</h3>
+          <h3>Mentions IA et crédits</h3>
           <p>
             Outil étudié : ChatGPT. Démonstration réalisée sur le profil entièrement fictif d'Alex Martin (aucune donnée personnelle réelle utilisée). L'apprenant vérifie chaque proposition et conserve la décision finale.
           </p>
         </div>
         <div class="footer-col">
-          <h3>Sources et navigation</h3>
+          <h3>Navigation et sources</h3>
           <ul>
             <li><a href="../index.html">Accueil de la formation</a></li>
-            <li><a href="module-1.html">Module 1 : Diagnostiquer son CV</a></li>
-            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA</a></li>
-            <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV</a></li>
-            <li><span>Sources documentaires : références de vérification en cours de consolidation (Lab 2).</span></li>
+            <li><a href="module-1.html">Module 1 : Diagnostiquer son CV (5 min)</a></li>
+            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA (7 min)</a></li>
+            <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV (6 min)</a></li>
+            <li><span>Sources documentaires : en cours de consolidation (Lab 2).</span></li>
           </ul>
         </div>
       </div>

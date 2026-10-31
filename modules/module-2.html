@@ -57,19 +57,32 @@
         </ol>
       </nav>
 
+      <!-- Progression de navigation correspondant à l'étape réelle (Module 2 sur 3) -->
+      <div class="course-step-bar" role="region" aria-label="Position dans le parcours">
+        <div class="step-bar-info">
+          <span>Étape 2 sur 3 : Améliorer son CV avec l'IA</span>
+          <span class="sidebar-time">(7 min sur 18 min au total)</span>
+        </div>
+        <div class="step-bar-dots" aria-hidden="true">
+          <span class="step-dot is-past"></span>
+          <span class="step-dot is-current"></span>
+          <span class="step-dot"></span>
+        </div>
+      </div>
+
       <div class="page-layout">
-        <!-- Navigation latérale accessible -->
+        <!-- Navigation latérale discrète et repliable -->
         <aside class="course-sidebar" aria-label="Navigation du parcours et des sections du module 2">
           <div class="sidebar-panel">
             <button
               type="button"
               class="sidebar-toggle"
               id="sidebar-toggle"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-controls="sidebar-body"
             >
-              <span>Sommaire du Module 2</span>
-              <span class="sidebar-toggle-badge">Afficher</span>
+              <span>Sommaire</span>
+              <span class="sidebar-toggle-badge">Fermer</span>
             </button>
 
             <div id="sidebar-body" class="sidebar-body">
@@ -103,24 +116,24 @@
               </div>
 
               <div class="sidebar-group">
-                <h2 class="sidebar-heading">Sections du Module 2</h2>
+                <h2 class="sidebar-heading">Étapes du Module 2</h2>
                 <ul class="sidebar-list">
-                  <li><a href="#objectif-module" class="sidebar-link">Objectif mesurable</a></li>
+                  <li><a href="#objectif-module" class="sidebar-link is-active">Objectif mesurable</a></li>
                   <li><a href="#donnees-reference" class="sidebar-link">Données d'Alex Martin</a></li>
-                  <li><a href="#sequence-1" class="sidebar-link">Séquence 1 : Introduction</a></li>
-                  <li><a href="#sequence-2" class="sidebar-link">Séquence 2 : Prompt en 5 blocs</a></li>
-                  <li><a href="#sequence-3" class="sidebar-link">Séquence 3 : Démonstration IA</a></li>
-                  <li><a href="#sequence-4" class="sidebar-link">Séquence 4 : Analyse</a></li>
-                  <li><a href="#sequence-5" class="sidebar-link">Séquence 5 : Exercice guidé</a></li>
-                  <li><a href="#sequence-6" class="sidebar-link">Séquence 6 : Synthèse</a></li>
-                  <li><a href="#supports-module-2" class="sidebar-link">Vidéo et ressources</a></li>
+                  <li><a href="#sequence-1" class="sidebar-link">Étape 1 : Introduction</a></li>
+                  <li><a href="#sequence-2" class="sidebar-link">Étape 2 : Prompt en 5 blocs</a></li>
+                  <li><a href="#sequence-3" class="sidebar-link">Étape 3 : Démonstration IA</a></li>
+                  <li><a href="#sequence-4" class="sidebar-link">Étape 4 : Comprendre</a></li>
+                  <li><a href="#sequence-5" class="sidebar-link">Étape 5 : Exercice guidé</a></li>
+                  <li><a href="#sequence-6" class="sidebar-link">Étape 6 : Synthèse</a></li>
+                  <li><a href="#supports-module-2" class="sidebar-link">Médias et ressources</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </aside>
 
-        <!-- Contenu détaillé du Module 2 -->
+        <!-- Contenu détaillé du Module 2 découpé par étapes courtes -->
         <div class="page-content">
           <article class="module-detail" aria-labelledby="titre-module">
             <header class="module-detail-header">
@@ -132,18 +145,15 @@
               <p class="module-detail-context">
                 Formation : Créer un CV optimisé par IA - Améliorer un CV existant avec ChatGPT (Prérequis : avoir terminé le Module 1)
               </p>
-            </header>
 
-            <!-- Objectif pédagogique mesurable -->
-            <section id="objectif-module" aria-labelledby="titre-obj-m2">
-              <h2 id="titre-obj-m2" class="section-title">Objectif pédagogique du module</h2>
-              <div class="objective-item" style="margin-top: 0.75rem;">
+              <!-- Objectif pédagogique mesurable -->
+              <div id="objectif-module" class="objective-item" aria-label="Objectif pédagogique du module 2">
                 <span class="objective-number" aria-hidden="true">2</span>
                 <p class="objective-text">
                   <strong>Objectif mesurable :</strong> Utiliser un prompt structuré dans ChatGPT pour proposer l'amélioration d'au moins deux éléments du CV, sans ajouter d'informations fictives.
                 </p>
               </div>
-            </section>
+            </header>
 
             <!-- Données de référence du candidat fictif -->
             <section id="donnees-reference" class="sequence-block" aria-labelledby="titre-donnees">
@@ -176,28 +186,25 @@
               </div>
             </section>
 
-            <!-- Séquence 1 - Introduction -->
+            <!-- Étape 1 (Séquence 1) - Introduction -->
             <section id="sequence-1" class="sequence-block" aria-labelledby="titre-seq-1">
               <div class="sequence-header">
-                <h2 id="titre-seq-1" class="sequence-title">Séquence 1 - Introduction</h2>
-                <span class="sequence-timing">0:00 à 0:30</span>
+                <h2 id="titre-seq-1" class="sequence-title">Étape 1 - Passer du diagnostic à la reformulation</h2>
+                <span class="sequence-timing">Séquence 1 - 0:00 à 0:30</span>
               </div>
-              <div class="narration-box">
-                <span class="narration-label">Explication pédagogique</span>
-                <p>
-                  Dans le premier module, nous avons repéré plusieurs problèmes dans le CV d'Alex : un titre trop général, des compétences imprécises et un projet scolaire peu détaillé.
-                </p>
-                <p>
-                  Nous allons maintenant découvrir comment demander à ChatGPT de proposer des formulations plus claires, sans inventer d'informations sur le candidat.
-                </p>
-              </div>
+              <p>
+                Dans le premier module, nous avons repéré plusieurs problèmes dans le CV d'Alex : un titre trop général, des compétences imprécises et un projet scolaire peu détaillé.
+              </p>
+              <p>
+                Nous allons maintenant découvrir comment demander à ChatGPT de proposer des formulations plus claires, sans inventer d'informations sur le candidat.
+              </p>
             </section>
 
-            <!-- Séquence 2 - Construire un prompt efficace -->
+            <!-- Étape 2 (Séquence 2) - Construire un prompt efficace -->
             <section id="sequence-2" class="sequence-block" aria-labelledby="titre-seq-2">
               <div class="sequence-header">
-                <h2 id="titre-seq-2" class="sequence-title">Séquence 2 - Construire un prompt efficace en 5 blocs</h2>
-                <span class="sequence-timing">0:30 à 2:00</span>
+                <h2 id="titre-seq-2" class="sequence-title">Étape 2 - Construire un prompt efficace en 5 blocs</h2>
+                <span class="sequence-timing">Séquence 2 - 0:30 à 2:00</span>
               </div>
               <p>
                 Pour utiliser ChatGPT efficacement, nous devons lui donner des instructions précises (un <strong>prompt</strong>). Plutôt que d'écrire simplement « Améliore mon CV », nous structurons notre demande en cinq blocs :
@@ -221,17 +228,22 @@
               </ol>
             </section>
 
-            <!-- Séquence 3 - Démonstration avec ChatGPT -->
+            <!-- Étape 3 (Séquence 3) - Démonstration avec ChatGPT -->
             <section id="sequence-3" class="sequence-block" aria-labelledby="titre-seq-3">
               <div class="sequence-header">
-                <h2 id="titre-seq-3" class="sequence-title">Séquence 3 - Démonstration réelle avec ChatGPT</h2>
-                <span class="sequence-timing">2:00 à 4:00</span>
+                <h2 id="titre-seq-3" class="sequence-title">Étape 3 - Démonstration réelle avec ChatGPT</h2>
+                <span class="sequence-timing">Séquence 3 - 2:00 à 4:00</span>
               </div>
               <p>
                 Voici le prompt réellement envoyé à ChatGPT (test réalisé le 28 octobre 2026) et le tableau comparatif obtenu :
               </p>
 
-              <div class="prompt-box" role="region" aria-label="Prompt réel envoyé à ChatGPT">Tu es un conseiller spécialisé dans l'amélioration rédactionnelle des CV d'étudiants.
+              <details class="collapsible-panel" open>
+                <summary class="collapsible-summary">
+                  <span>Prompt intégral envoyé à ChatGPT (démonstration du 28 octobre 2026)</span>
+                </summary>
+                <div class="collapsible-content">
+                  <div id="prompt-demo-m2" class="prompt-box" role="region" aria-label="Prompt réel envoyé à ChatGPT">Tu es un conseiller spécialisé dans l'amélioration rédactionnelle des CV d'étudiants.
 Je prépare une mini-formation pédagogique et je vais te présenter un CV entièrement fictif.
 Ta mission consiste à améliorer uniquement trois éléments de ce CV :
 1. Le titre professionnel.
@@ -259,8 +271,18 @@ Format attendu :
 Présente un tableau avec trois colonnes : Élément, Version initiale, Proposition améliorée.
 Puis explique brièvement pourquoi chaque modification améliore la précision et la clarté du CV.
 Signale toute information qui devrait être confirmée avant utilisation dans une candidature réelle.</div>
+                  <div class="prompt-card-footer">
+                    <p class="prompt-card-reminder">
+                      Ce prompt de démonstration utilise exclusivement le profil fictif d'Alex Martin.
+                    </p>
+                    <button type="button" class="btn btn-secondary copy-btn" data-copy-prompt="prompt-demo-m2">
+                      Copier le prompt
+                    </button>
+                  </div>
+                </div>
+              </details>
 
-              <h3 style="font-size: 1.05rem; margin-top: 1.25rem;">Tableau comparatif issu de la démonstration</h3>
+              <h3 class="subheading">Tableau comparatif issu de la démonstration</h3>
               <div class="table-responsive">
                 <table class="comparison-table">
                   <thead>
@@ -289,16 +311,16 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
                   </tbody>
                 </table>
               </div>
-              <p style="font-size: 0.875rem; color: var(--color-text-muted);">
+              <p class="muted-note">
                 Observation importante : ChatGPT n'a pas conservé « Bureautique » et « Travail en équipe », car aucune précision ne permettait de confirmer les logiciels utilisés ni le contexte collaboratif.
               </p>
             </section>
 
-            <!-- Séquence 4 - Comprendre les modifications -->
+            <!-- Étape 4 (Séquence 4) - Comprendre les modifications -->
             <section id="sequence-4" class="sequence-block" aria-labelledby="titre-seq-4">
               <div class="sequence-header">
-                <h2 id="titre-seq-4" class="sequence-title">Séquence 4 - Comprendre les modifications</h2>
-                <span class="sequence-timing">4:00 à 5:00</span>
+                <h2 id="titre-seq-4" class="sequence-title">Étape 4 - Comprendre les modifications proposées</h2>
+                <span class="sequence-timing">Séquence 4 - 4:00 à 5:00</span>
               </div>
               <div class="criteria-grid">
                 <div class="criteria-card">
@@ -322,11 +344,11 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
               </div>
             </section>
 
-            <!-- Séquence 5 - Exercice guidé -->
+            <!-- Étape 5 (Séquence 5) - Exercice guidé -->
             <section id="sequence-5" class="sequence-block" aria-labelledby="titre-seq-5">
               <div class="sequence-header">
-                <h2 id="titre-seq-5" class="sequence-title">Séquence 5 - Exercice guidé</h2>
-                <span class="sequence-timing">5:00 à 6:30</span>
+                <h2 id="titre-seq-5" class="sequence-title">Étape 5 - Exercice guidé de rédaction de prompt</h2>
+                <span class="sequence-timing">Séquence 5 - 5:00 à 6:30</span>
               </div>
 
               <div class="exercise-card">
@@ -342,8 +364,16 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
                   <li>Le format souhaité pour la réponse.</li>
                 </ol>
 
-                <p><strong>Modèle d'aide :</strong></p>
-                <div class="prompt-box">Tu es un assistant de rédaction de CV. Voici les informations confirmées du candidat : [informations]. Améliore [élément 1] et [élément 2]. N'ajoute aucune information non fournie. Présente un tableau avant/après et signale les informations manquantes.</div>
+                <p class="subheading">Modèle d'aide :</p>
+                <div id="prompt-modele-m2" class="prompt-box">Tu es un assistant de rédaction de CV. Voici les informations confirmées du candidat : [informations]. Améliore [élément 1] et [élément 2]. N'ajoute aucune information non fournie. Présente un tableau avant/après et signale les informations manquantes.</div>
+                <div class="prompt-card-footer">
+                  <p class="prompt-card-reminder">
+                    Astuce : copiez ce modèle dans la zone de saisie ci-dessous ou consultez les <a href="../index.html#bibliotheque-prompts">5 modèles de la bibliothèque de prompts</a>.
+                  </p>
+                  <button type="button" class="btn btn-secondary copy-btn" data-copy-prompt="prompt-modele-m2">
+                    Copier le modèle
+                  </button>
+                </div>
 
                 <label for="notes-module-2">
                   <strong>Rédige ton prompt ci-dessous avant d'afficher les critères de correction :</strong>
@@ -379,11 +409,11 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
               </div>
             </section>
 
-            <!-- Séquence 6 - Synthèse -->
+            <!-- Étape 6 (Séquence 6) - Synthèse -->
             <section id="sequence-6" class="sequence-block" aria-labelledby="titre-seq-6">
               <div class="sequence-header">
-                <h2 id="titre-seq-6" class="sequence-title">Séquence 6 - Synthèse et transition</h2>
-                <span class="sequence-timing">6:30 à 7:00</span>
+                <h2 id="titre-seq-6" class="sequence-title">Étape 6 - Synthèse et transition</h2>
+                <span class="sequence-timing">Séquence 6 - 6:30 à 7:00</span>
               </div>
               <div class="narration-box">
                 <span class="narration-label">À retenir</span>
@@ -396,14 +426,31 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
               </div>
             </section>
 
-            <!-- Supports multimédias et ressources en préparation -->
-            <section id="supports-module-2" aria-labelledby="titre-supports-m2" style="margin-top: 1.75rem;">
-              <h2 id="titre-supports-m2" class="section-title">Supports vidéo et fiche PDF du module</h2>
-              <div class="placeholder-box" style="margin-top: 0.75rem;">
-                <span class="placeholder-badge">Supports complémentaires en préparation</span>
-                <p class="placeholder-notice">
-                  La capsule vidéo de démonstration et la fiche récapitulative PDF (Handout) associées à ce module sont en cours de production à partir du script validé.
-                </p>
+            <!-- Emplacements discrets pour médias et ressources facultatifs -->
+            <section id="supports-module-2" class="sequence-block" aria-labelledby="titre-supports-m2">
+              <div class="sequence-header">
+                <h2 id="titre-supports-m2" class="sequence-title">Médias et ressources du Module 2</h2>
+                <span class="sequence-timing">Compléments</span>
+              </div>
+              <div class="discreet-resources-grid">
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Vidéo facultative :</strong> démonstration filmée du prompt ChatGPT dans <code>assets/</code>.
+                  </p>
+                </div>
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Illustration :</strong> schéma récapitulatif des 5 blocs d'un prompt structuré.
+                  </p>
+                </div>
+                <div class="placeholder-box">
+                  <span class="placeholder-badge">En préparation</span>
+                  <p class="placeholder-notice">
+                    <strong>Fiche mémo PDF :</strong> modèle de prompt prêt à adapter (Handout).
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -427,25 +474,25 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h3>Auteur et contexte</h3>
+          <h3>Auteur et contexte académique</h3>
           <p><strong>Auteur :</strong> Ange TEUFACK</p>
           <p><strong>Contexte :</strong> Projet scolaire ÉSTIAM - AI Advanced</p>
           <p><strong>Formation :</strong> Créer un CV optimisé par IA (18 minutes)</p>
         </div>
         <div class="footer-col">
-          <h3>Crédits IA et éthique</h3>
+          <h3>Mentions IA et crédits</h3>
           <p>
             Outil étudié : ChatGPT. Démonstration réalisée sur le profil entièrement fictif d'Alex Martin (aucune donnée personnelle réelle utilisée). L'apprenant vérifie chaque proposition et conserve la décision finale.
           </p>
         </div>
         <div class="footer-col">
-          <h3>Sources et navigation</h3>
+          <h3>Navigation et sources</h3>
           <ul>
             <li><a href="../index.html">Accueil de la formation</a></li>
-            <li><a href="module-1.html">Module 1 : Diagnostiquer son CV</a></li>
-            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA</a></li>
-            <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV</a></li>
-            <li><span>Sources documentaires : références de vérification en cours de consolidation (Lab 2).</span></li>
+            <li><a href="module-1.html">Module 1 : Diagnostiquer son CV (5 min)</a></li>
+            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA (7 min)</a></li>
+            <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV (6 min)</a></li>
+            <li><span>Sources documentaires : en cours de consolidation (Lab 2).</span></li>
           </ul>
         </div>
       </div>
