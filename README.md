@@ -29,7 +29,7 @@ estiam-ai-advanced-cv/
 ├── assets/
 │   ├── images/         # Illustrations intégrées (cover-formation.png, module-1-diagnostic.png, module-2-prompt.png, module-3-verification.png)
 │   ├── docs/           # Handout PDF intégré (E3_Handout_CV_IA_FINAL.pdf)
-│   └── videos/         # Vidéos MP4 intégrées (E3_Scene_01_Introduction_20s_FINAL.mp4 et E3_Lesson_Video_FINAL.mp4)
+│   └── videos/         # Vidéos MP4 optimisées faststart (E3_Scene_01_Introduction_20s_FINAL.mp4, E3_Lesson_Video_FINAL.mp4 et sous-titres WebVTT E3_Lesson_Video_FINAL.vtt)
 └── README.md           # Documentation technique du projet
 ```
 

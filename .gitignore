@@ -1,5 +1,7 @@
 # Dossier interne de conception et documents de travail (non publiés)
 references/
+assets/videos/backup_originals/
+assets/images/*.svg
 *.docx
 
 # Secrets et variables d'environnement
