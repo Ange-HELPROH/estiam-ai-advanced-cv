@@ -22,7 +22,6 @@
       <a href="index.html" class="site-brand" aria-current="page">
         <span class="brand-badge">ÉSTIAM AI Advanced</span>
         <span class="brand-title">Créer un CV optimisé par IA</span>
-        <span class="brand-scope">Améliorer un CV existant avec ChatGPT</span>
       </a>
 
       <!-- Bouton d'ouverture/fermeture du menu sur mobile -->
@@ -45,7 +44,7 @@
           <li><a href="modules/module-1.html" class="nav-link">Module 1</a></li>
           <li><a href="modules/module-2.html" class="nav-link">Module 2</a></li>
           <li><a href="modules/module-3.html" class="nav-link">Module 3</a></li>
-          <li><a href="modules/module-3.html#quiz-final" class="nav-link">Quiz</a></li>
+          <li><a href="modules/module-3.html#quiz-final" class="nav-link">Quiz final</a></li>
         </ul>
       </nav>
     </div>
@@ -75,7 +74,7 @@
                 Consulter le Handout PDF
               </a>
               <a href="modules/module-3.html#quiz-final" class="btn btn-secondary">
-                Accéder au quiz (8 questions)
+                Quiz final (Google Forms)
               </a>
             </div>
           </div>
@@ -158,7 +157,13 @@
                   </li>
                   <li>
                     <a href="modules/module-3.html#quiz-final" class="sidebar-link">
-                      <span>Quiz d'évaluation</span>
+                      <span>Quiz final (Google Forms)</span>
+                      <span class="sidebar-time">Officiel</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="modules/module-3.html#quiz-entrainement" class="sidebar-link">
+                      <span>Quiz d'entraînement</span>
                       <span class="sidebar-time">8 questions</span>
                     </a>
                   </li>
@@ -169,12 +174,14 @@
                 <h2 class="sidebar-heading">Sections de la page</h2>
                 <ul class="sidebar-list">
                   <li><a href="#presentation" class="sidebar-link is-active">Présentation</a></li>
+                  <li><a href="#videos" class="sidebar-link">Vidéos de la formation</a></li>
                   <li><a href="#objectifs" class="sidebar-link">3 objectifs mesurables</a></li>
                   <li><a href="#parcours" class="sidebar-link">Les 3 modules</a></li>
                   <li><a href="#methode" class="sidebar-link">Notre méthode</a></li>
                   <li><a href="#bibliotheque-prompts" class="sidebar-link">Bibliothèque de prompts</a></li>
-                  <li><a href="#ressources" class="sidebar-link">Handout PDF, vidéos et quiz</a></li>
+                  <li><a href="#ressources" class="sidebar-link">Évaluations et Handout PDF</a></li>
                   <li><a href="#vocabulaire" class="sidebar-link">Glossaire et cadre</a></li>
+                  <li><a href="#credits-sources" class="sidebar-link">Crédits et sources</a></li>
                 </ul>
               </div>
             </div>
@@ -183,6 +190,64 @@
 
         <!-- Contenu principal de l'accueil -->
         <div class="page-content">
+          <!-- AG-08 : lecteurs vidéo visibles dès l'accueil (sans lecture automatique, chemins relatifs GitHub Pages) -->
+          <section id="videos" class="content-section" aria-labelledby="titre-videos">
+            <div class="section-header">
+              <div>
+                <p class="section-eyebrow">Démarrer en vidéo</p>
+                <h2 id="titre-videos" class="section-title">Les deux vidéos de la formation</h2>
+              </div>
+              <p class="section-duration">20 s + 1 min 20 s</p>
+            </div>
+            <div id="video-capsule" class="video-players-grid">
+              <figure class="video-card">
+                <div class="video-player-wrapper">
+                  <video
+                    class="video-player"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="assets/images/cover-formation.png"
+                    aria-describedby="legende-video-avatar"
+                  >
+                    <source src="assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4" type="video/mp4">
+                    Votre navigateur ne lit pas la vidéo HTML5 :
+                    <a href="assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4">ouvrir la capsule d'introduction (MP4)</a>.
+                  </video>
+                </div>
+                <figcaption id="legende-video-avatar" class="video-caption">
+                  <span class="video-card-title">Capsule avatar - Introduction</span>
+                  <span class="video-meta">20 secondes - MP4 1920 x 1080 -
+                    <a href="assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4" target="_blank" rel="noopener">ouvrir dans un onglet</a>
+                  </span>
+                </figcaption>
+              </figure>
+
+              <figure class="video-card">
+                <div class="video-player-wrapper">
+                  <video
+                    class="video-player"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="assets/images/module-2-prompt.png"
+                    aria-describedby="legende-video-lecon"
+                  >
+                    <source src="assets/videos/E3_Lesson_Video_FINAL.mp4" type="video/mp4">
+                    Votre navigateur ne lit pas la vidéo HTML5 :
+                    <a href="assets/videos/E3_Lesson_Video_FINAL.mp4">ouvrir la vidéo de leçon (MP4)</a>.
+                  </video>
+                </div>
+                <figcaption id="legende-video-lecon" class="video-caption">
+                  <span class="video-card-title">Vidéo de leçon</span>
+                  <span class="video-meta">1 min 20 s - MP4 1920 x 1080 -
+                    <a href="assets/videos/E3_Lesson_Video_FINAL.mp4" target="_blank" rel="noopener">ouvrir dans un onglet</a>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
           <!-- Présentation concise des 3 objectifs mesurables -->
           <section id="objectifs" class="content-section" aria-labelledby="titre-objectifs">
             <div class="section-header">
@@ -332,8 +397,17 @@
               <p>
                 Ne partagez pas vos coordonnées personnelles (numéro de téléphone, adresse postale, e-mail personnel) dans un outil d'IA. Vérifiez systématiquement chaque proposition avant de l'intégrer à votre CV.
               </p>
+              <p class="source-note">
+                Pour aller plus loin : <a href="https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative" target="_blank" rel="noopener">questions-réponses de la CNIL sur l'utilisation d'un système d'IA générative</a>.
+              </p>
             </div>
 
+            <!-- Contenu secondaire repliable : les 5 modèles restent accessibles et copiables sans alourdir l'accueil -->
+            <details class="collapsible-panel">
+              <summary class="collapsible-summary">
+                <span>Afficher les 5 modèles de prompts personnalisables</span>
+              </summary>
+              <div class="collapsible-content">
             <div class="prompt-library-grid">
               <!-- Modèle 1 : Diagnostiquer un CV -->
               <article class="prompt-card" aria-labelledby="prompt-titre-1">
@@ -482,22 +556,67 @@ Compare ces deux textes et signale :
                 </div>
               </article>
             </div>
+              </div>
+            </details>
           </section>
 
-          <!-- PRIORITÉ 6 : Intégration réelle du Handout PDF, accès au Quiz et emplacements vidéo clairement identifiés -->
+          <!-- AG-08 : Quiz final principal (Google Forms officiel), Quiz d'entraînement HTML et Handout PDF -->
           <section id="ressources" class="content-section" aria-labelledby="titre-ressources">
             <div class="section-header">
               <div>
-                <p class="section-eyebrow">Supports complémentaires et évaluation</p>
-                <h2 id="titre-ressources" class="section-title">Handout PDF, Quiz interactif et Capsules vidéo</h2>
+                <p class="section-eyebrow">Évaluations et fiche récapitulative</p>
+                <h2 id="titre-ressources" class="section-title">Quiz final officiel, Entraînement et Handout PDF</h2>
               </div>
             </div>
+
             <div class="discreet-resources-grid">
-              <!-- Handout PDF réellement disponible -->
+              <!-- 1. Quiz final principal : Google Forms officiel -->
+              <div id="quiz-final" class="resource-card is-available">
+                <div>
+                  <span class="eval-badge is-primary-eval">Quiz final principal (Google Forms)</span>
+                  <p class="resource-text">
+                    <strong>Évaluation finale officielle :</strong> questionnaire Google Forms principal permettant de valider vos acquis à l'issue des 3 modules (18 minutes). Aucun résultat n'est affiché avant soumission réelle du formulaire.
+                  </p>
+                </div>
+                <div class="resource-actions">
+                  <a
+                    href="https://forms.gle/xWCkTc8geZbm69Ud7"
+                    class="btn btn-primary copy-btn"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Ouvrir le Google Forms officiel
+                  </a>
+                  <a href="modules/module-3.html#quiz-final" class="btn btn-secondary copy-btn">
+                    Ouvrir dans le Module 3
+                  </a>
+                </div>
+                <p class="muted-note">
+                  Lien direct alternatif :
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfY92RVZzI88XxU_Ec27S6nXU2oowK9q_g-PeBi7_kP0mzLYw/viewform?usp=header" target="_blank" rel="noopener">formulaire Google Forms (URL complète)</a>.
+                </p>
+              </div>
+
+              <!-- 2. Quiz d'entraînement complémentaire : HTML interactif (8 questions) -->
+              <div id="quiz-entrainement-accueil" class="resource-card is-available">
+                <div>
+                  <span class="eval-badge is-training-eval">Entraînement complémentaire (HTML)</span>
+                  <p class="resource-text">
+                    <strong>Quiz d'entraînement interactif (8 questions) :</strong> auto-évaluation formative locale en 4 niveaux (Facile, Moyen, Difficile, Expert) avec corrigés immédiats, pour vous entraîner avant le Google Forms officiel.
+                  </p>
+                </div>
+                <div class="resource-actions">
+                  <a href="modules/module-3.html#quiz-entrainement" class="btn btn-accent copy-btn">
+                    S'entraîner sur le quiz HTML (8 questions)
+                  </a>
+                </div>
+              </div>
+
+              <!-- 3. Handout PDF réellement disponible -->
               <div class="resource-card is-available">
                 <div>
-                  <span class="placeholder-badge is-ready">Disponible (PDF)</span>
-                  <p class="placeholder-notice">
+                  <span class="status-badge is-ready">Disponible (PDF)</span>
+                  <p class="resource-text">
                     <strong>Handout PDF de la formation :</strong> fiche récapitulative complète (critères de diagnostic, structure du prompt en 5 blocs et checklist de vérification).
                   </p>
                 </div>
@@ -519,34 +638,6 @@ Compare ces deux textes et signale :
                   </a>
                 </div>
               </div>
-
-              <!-- Quiz interactif réellement opérationnel (8 questions) -->
-              <div id="quiz-final" class="resource-card is-available">
-                <div>
-                  <span class="placeholder-badge is-ready">Opérationnel (8 questions)</span>
-                  <p class="placeholder-notice">
-                    <strong>Quiz interactif de fin de parcours :</strong> 8 questions réparties en 4 niveaux de difficulté (Facile, Moyen, Difficile, Expert) avec corrigés détaillés.
-                  </p>
-                </div>
-                <div class="resource-actions">
-                  <a href="modules/module-3.html#quiz-final" class="btn btn-accent copy-btn">
-                    Passer le quiz (Module 3)
-                  </a>
-                </div>
-              </div>
-
-              <!-- Emplacements vidéo clairement identifiés (en attente des fichiers .mp4 finaux) -->
-              <div id="video-capsule" class="placeholder-box">
-                <div>
-                  <span class="placeholder-badge">En attente des fichiers .mp4</span>
-                  <p class="placeholder-notice">
-                    <strong>1. Clip IA d'introduction (20 s) :</strong> emplacement réservé à <code>assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4</code>.
-                  </p>
-                  <p class="placeholder-notice">
-                    <strong>2. Vidéo de leçon complète :</strong> emplacement réservé à <code>assets/videos/E3_Lesson_Video_FINAL.mp4</code>.
-                  </p>
-                </div>
-              </div>
             </div>
           </section>
 
@@ -562,7 +653,7 @@ Compare ces deux textes et signale :
               Dépliez les panneaux ci-dessous pour consulter les 9 définitions clés du parcours ainsi que les règles de transparence appliquées dans cette formation :
             </p>
 
-            <details class="collapsible-panel" open>
+            <details class="collapsible-panel">
               <summary class="collapsible-summary">
                 <span>Vocabulaire commun de la formation (9 termes essentiels)</span>
               </summary>
@@ -614,10 +705,39 @@ Compare ces deux textes et signale :
               </summary>
               <div class="collapsible-content">
                 <p>
-                  Toutes les démonstrations de cette mini-formation s'appuient sur le CV fictif d'Alex Martin (étudiant en BTS SIO option SLAM recherchant une alternance en développement web). Ce choix pédagogique garantit qu'aucune donnée personnelle réelle n'est exposée et permet d'observer étape par étape le passage d'un CV initial peu précis à un CV final vérifié.
+                  Toutes les démonstrations de cette mini-formation s'appuient sur le CV fictif d'Alex Martin (étudiant en BTS Services informatiques aux organisations, option B : Solutions logicielles et applications métiers (SLAM) recherchant une alternance en développement web). Ce choix pédagogique garantit qu'aucune donnée personnelle réelle n'est exposée et permet d'observer étape par étape le passage d'un CV initial peu précis à un CV final vérifié.
                 </p>
               </div>
             </details>
+          </section>
+
+          <!-- AG-08 : Section Crédits et Sources avec les outils, médias et sources officielles (Onisep et CNIL) -->
+          <section id="credits-sources" class="content-section" aria-labelledby="titre-credits-sources">
+            <div class="section-header">
+              <div>
+                <p class="section-eyebrow">Traçabilité académique ÉSTIAM AI Advanced</p>
+                <h2 id="titre-credits-sources" class="section-title">Crédits et Sources de la mini-formation</h2>
+              </div>
+            </div>
+            <div class="credits-grid">
+              <div class="credits-card">
+                <h3>Outils pédagogiques et IA mobilisés</h3>
+                <ul>
+                  <li><strong>ChatGPT (OpenAI) :</strong> assistant d'IA utilisé lors du test réel du 28/10/2026 pour reformuler 3 éléments du CV fictif d'Alex Martin sans inventer d'expériences.</li>
+                  <li><strong>Google Forms :</strong> support officiel du <a href="https://forms.gle/xWCkTc8geZbm69Ud7" target="_blank" rel="noopener">quiz final principal d'évaluation des acquis</a>.</li>
+                  <li><strong>Interface web ÉSTIAM :</strong> développée en HTML5, CSS3 et JavaScript natif (typographie <em>Merriweather</em>) avec quiz d'entraînement interactif en 8 questions.</li>
+                </ul>
+              </div>
+              <div class="credits-card">
+                <h3>Médias produits et sources officielles vérifiées</h3>
+                <ul>
+                  <li><strong>Capsules vidéo MP4 :</strong> capsule avatar d'introduction de 20 s (<code>E3_Scene_01_Introduction_20s_FINAL.mp4</code>, 9,37 Mo) et vidéo de leçon complète d'1 min 20 s (<code>E3_Lesson_Video_FINAL.mp4</code>, 25,44 Mo).</li>
+                  <li><strong>Supports visuels et PDF :</strong> 4 illustrations pédagogiques PNG (1672 x 941 px) et Handout récapitulatif de 4 pages (<code>E3_Handout_CV_IA_FINAL.pdf</code>).</li>
+                  <li><strong>Source officielle Onisep :</strong> <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target="_blank" rel="noopener">fiche officielle Onisep</a> vérifiant la dénomination exacte « BTS Services informatiques aux organisations, option B : Solutions logicielles et applications métiers (SLAM) ».</li>
+                  <li><strong>Source officielle CNIL :</strong> <a href="https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative" target="_blank" rel="noopener">questions-réponses de la CNIL sur l'utilisation d'un système d'IA générative</a> (limites, exactitude et protection des données personnelles).</li>
+                </ul>
+              </div>
+            </div>
           </section>
 
           <nav class="module-pagination" aria-label="Navigation séquentielle">
@@ -642,20 +762,21 @@ Compare ces deux textes et signale :
           <p><strong>Formation :</strong> Créer un CV optimisé par IA (18 minutes)</p>
         </div>
         <div class="footer-col">
-          <h3>Transparence et usage de l'IA</h3>
+          <h3>Crédits, outils et médias</h3>
           <p>
-            Outil étudié : ChatGPT. Démonstration réalisée sur le profil entièrement fictif d'Alex Martin (aucune donnée personnelle réelle utilisée). L'IA propose des formulations, mais l'apprenant vérifie chaque information et conserve la décision finale.
+            Outil d'IA étudié : ChatGPT (démonstration sur le profil fictif d'Alex Martin, zéro donnée personnelle). Médias intégrés : 2 vidéos MP4, 4 illustrations PNG, Handout PDF, Quiz final officiel Google Forms et Quiz d'entraînement HTML.
           </p>
         </div>
         <div class="footer-col">
-          <h3>Navigation et sources</h3>
+          <h3>Navigation et sources officielles</h3>
           <ul>
             <li><a href="index.html">Accueil de la formation</a></li>
             <li><a href="modules/module-1.html">Module 1 : Diagnostiquer son CV (5 min)</a></li>
             <li><a href="modules/module-2.html">Module 2 : Améliorer son CV avec ChatGPT (7 min)</a></li>
             <li><a href="modules/module-3.html">Module 3 : Vérifier et finaliser son CV (6 min)</a></li>
             <li><a href="assets/docs/E3_Handout_CV_IA_FINAL.pdf" target="_blank" rel="noopener">Handout PDF officiel</a></li>
-            <li><span>Sources officielles : référentiel BTS SIO (option SLAM) et documentation ÉSTIAM (vérification Lab 2).</span></li>
+            <li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target="_blank" rel="noopener">Onisep - BTS SIO option B (SLAM)</a></li>
+            <li><a href="https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative" target="_blank" rel="noopener">CNIL - Utiliser un système d'IA générative</a></li>
           </ul>
         </div>
       </div>

@@ -2,7 +2,7 @@
  * Script principal - Créer un CV optimisé par IA (ÉSTIAM AI Advanced)
  * Périmètre : Améliorer un CV existant avec ChatGPT
  *
- * Responsabilités techniques (AG-06) :
+ * Responsabilités techniques (AG-08) :
  * 1. Activer l'amélioration progressive (.js-enabled).
  * 2. Gérer l'ouverture/fermeture accessible du menu principal sur mobile (#nav-toggle).
  * 3. Gérer le bouton "Sommaire" repliable sur mobile, tablette et ordinateur (#sidebar-toggle)
@@ -11,7 +11,7 @@
  * 5. Mettre à jour le compteur de la checklist de vérification du Module 3 ([data-checklist-item]).
  * 6. Gérer la copie fonctionnelle des modèles de prompts ([data-copy-prompt]).
  * 7. Gérer l'impression fonctionnelle des CV d'étude ([data-print-cv]).
- * 8. Gérer le quiz interactif véritable de 8 questions (#quiz-form, #quiz-progress, #quiz-result, #quiz-reset).
+ * 8. Gérer le quiz d'entraînement interactif de 8 questions (#quiz-form, #quiz-progress, #quiz-result, #quiz-reset).
  * 9. Déplacer explicitement le focus sur la zone principale via le lien d'évitement.
  */
 

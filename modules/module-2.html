@@ -22,7 +22,6 @@
       <a href="../index.html" class="site-brand">
         <span class="brand-badge">ÉSTIAM AI Advanced</span>
         <span class="brand-title">Créer un CV optimisé par IA</span>
-        <span class="brand-scope">Améliorer un CV existant avec ChatGPT</span>
       </a>
 
       <!-- Bouton d'ouverture/fermeture du menu sur mobile -->
@@ -45,7 +44,7 @@
           <li><a href="module-1.html" class="nav-link">Module 1</a></li>
           <li><a href="module-2.html" class="nav-link" aria-current="page">Module 2</a></li>
           <li><a href="module-3.html" class="nav-link">Module 3</a></li>
-          <li><a href="module-3.html#quiz-final" class="nav-link">Quiz</a></li>
+          <li><a href="module-3.html#quiz-final" class="nav-link">Quiz final</a></li>
         </ul>
       </nav>
     </div>
@@ -54,24 +53,21 @@
   <!-- Contenu principal du Module 2 -->
   <main id="contenu-principal" class="site-main" tabindex="-1">
     <div class="container">
-      <!-- Fil d'Ariane -->
-      <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <ol class="breadcrumb-list">
-          <li><a href="../index.html">Accueil</a></li>
-          <li aria-current="page">Module 2 : Améliorer son CV avec ChatGPT</li>
-        </ol>
-      </nav>
-
-      <!-- Progression de navigation correspondant à l'étape réelle (Module 2 sur 3) -->
-      <div class="course-step-bar" role="region" aria-label="Position dans le parcours">
-        <div class="step-bar-info">
-          <span>Étape 2 sur 3 : Améliorer son CV avec ChatGPT</span>
-          <span class="sidebar-time">(7 min sur 18 min au total)</span>
-        </div>
-        <div class="step-bar-dots" aria-hidden="true">
-          <span class="step-dot is-past"></span>
-          <span class="step-dot is-current"></span>
-          <span class="step-dot"></span>
+      <!-- Barre de repère compacte : fil d'Ariane et progression réelle dans le parcours -->
+      <div class="page-topbar">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <ol class="breadcrumb-list">
+            <li><a href="../index.html">Accueil</a></li>
+            <li aria-current="page">Module 2 : Améliorer son CV avec ChatGPT</li>
+          </ol>
+        </nav>
+        <div class="course-step-bar" role="group" aria-label="Position dans le parcours : module 2 sur 3">
+          <span class="step-bar-info">Module 2 / 3 - 7 min sur 18</span>
+          <span class="step-bar-dots" aria-hidden="true">
+            <span class="step-dot is-past"></span>
+            <span class="step-dot is-current"></span>
+            <span class="step-dot"></span>
+          </span>
         </div>
       </div>
 
@@ -119,7 +115,13 @@
                   </li>
                   <li>
                     <a href="module-3.html#quiz-final" class="sidebar-link">
-                      <span>Quiz d'évaluation</span>
+                      <span>Quiz final (Google Forms)</span>
+                      <span class="sidebar-time">Officiel</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="module-3.html#quiz-entrainement" class="sidebar-link">
+                      <span>Quiz d'entraînement</span>
                       <span class="sidebar-time">8 questions</span>
                     </a>
                   </li>
@@ -179,7 +181,7 @@
                 <div class="criteria-card">
                   <h3>Situation et objectif</h3>
                   <p>
-                    Étudiant en BTS Services informatiques aux organisations (SIO), option SLAM, de 2025 à 2027. Recherche une alternance en développement web.
+                    Étudiant en BTS Services informatiques aux organisations, option B : Solutions logicielles et applications métiers (SLAM), de 2025 à 2027. Recherche une alternance en développement web.
                   </p>
                 </div>
                 <div class="criteria-card">
@@ -452,17 +454,17 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
               </div>
             </section>
 
-            <!-- Handout PDF réel et emplacements vidéo du Module 2 -->
+            <!-- Handout PDF réel et lecteurs vidéo HTML5 du Module 2 -->
             <section id="supports-module-2" class="sequence-block" aria-labelledby="titre-supports-m2">
               <div class="sequence-header">
-                <h2 id="titre-supports-m2" class="sequence-title">Handout PDF et ressources du Module 2</h2>
+                <h2 id="titre-supports-m2" class="sequence-title">Handout PDF et capsules vidéo du Module 2</h2>
                 <span class="sequence-timing">Compléments</span>
               </div>
               <div class="discreet-resources-grid">
                 <div class="resource-card is-available">
                   <div>
-                    <span class="placeholder-badge is-ready">Disponible (PDF)</span>
-                    <p class="placeholder-notice">
+                    <span class="status-badge is-ready">Disponible (PDF)</span>
+                    <p class="resource-text">
                       <strong>Handout PDF de la formation :</strong> retrouvez la structure du prompt en 5 blocs prête à l'emploi dans la fiche téléchargeable.
                     </p>
                   </div>
@@ -484,18 +486,87 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
                     </a>
                   </div>
                 </div>
-                <div class="placeholder-box">
-                  <span class="placeholder-badge">En attente du fichier .mp4</span>
-                  <p class="placeholder-notice">
-                    <strong>Clip IA d'introduction (20 s) :</strong> emplacement réservé à <code>assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4</code>.
-                  </p>
+                <div class="resource-card is-available">
+                  <div>
+                    <span class="eval-badge is-primary-eval">Quiz final principal</span>
+                    <p class="resource-text">
+                      <strong>Google Forms officiel :</strong> évaluation finale principale accessible dans le Module 3.
+                    </p>
+                  </div>
+                  <div class="resource-actions">
+                    <a href="module-3.html#quiz-final" class="btn btn-secondary copy-btn">
+                      Aller au Quiz final (Module 3)
+                    </a>
+                  </div>
                 </div>
-                <div class="placeholder-box">
-                  <span class="placeholder-badge">En attente du fichier .mp4</span>
-                  <p class="placeholder-notice">
-                    <strong>Vidéo de leçon :</strong> emplacement réservé à <code>assets/videos/E3_Lesson_Video_FINAL.mp4</code>.
-                  </p>
+                <div class="resource-card is-available">
+                  <div>
+                    <span class="eval-badge is-training-eval">Entraînement HTML</span>
+                    <p class="resource-text">
+                      <strong>Quiz d'entraînement (8 questions) :</strong> auto-évaluation interactive complémentaire dans le Module 3.
+                    </p>
+                  </div>
+                  <div class="resource-actions">
+                    <a href="module-3.html#quiz-entrainement" class="btn btn-secondary copy-btn">
+                      Voir l'entraînement (Module 3)
+                    </a>
+                  </div>
                 </div>
+              </div>
+
+              <!-- Lecteurs vidéo HTML5 accessibles -->
+              <div class="video-players-grid" aria-label="Capsules vidéo du Module 2">
+                <article class="video-card" aria-labelledby="titre-video-lecon-m2">
+                  <div class="video-card-header">
+                    <h3 id="titre-video-lecon-m2" class="video-card-title">Vidéo de leçon complète</h3>
+                    <span class="status-badge is-ready">Vidéo MP4</span>
+                  </div>
+                  <p class="resource-text">
+                    Démonstration vidéo de la construction du prompt en 5 blocs et de son application sur le CV fictif d'Alex Martin.
+                  </p>
+                  <div class="video-player-wrapper">
+                    <video
+                      class="video-player"
+                      controls
+                      preload="metadata"
+                      poster="../assets/images/module-2-prompt.png"
+                      aria-label="Vidéo de leçon complète : Améliorer un CV existant avec ChatGPT"
+                    >
+                      <source src="../assets/videos/E3_Lesson_Video_FINAL.mp4" type="video/mp4">
+                      Votre navigateur ne prend pas en charge la lecture vidéo HTML5. <a href="../assets/videos/E3_Lesson_Video_FINAL.mp4" download="E3_Lesson_Video_FINAL.mp4">Télécharger la vidéo de leçon (MP4)</a>.
+                    </video>
+                  </div>
+                  <div class="video-meta">
+                    <span>Fichier : <code>E3_Lesson_Video_FINAL.mp4</code></span>
+                    <a href="../assets/videos/E3_Lesson_Video_FINAL.mp4" download="E3_Lesson_Video_FINAL.mp4">Télécharger (MP4)</a>
+                  </div>
+                </article>
+
+                <article class="video-card" aria-labelledby="titre-video-intro-m2">
+                  <div class="video-card-header">
+                    <h3 id="titre-video-intro-m2" class="video-card-title">Clip IA d'introduction (20 secondes)</h3>
+                    <span class="status-badge is-ready">Vidéo MP4</span>
+                  </div>
+                  <p class="resource-text">
+                    Rappel synthétique de l'objectif de la mini-formation : clarifier et structurer sans inventer.
+                  </p>
+                  <div class="video-player-wrapper">
+                    <video
+                      class="video-player"
+                      controls
+                      preload="metadata"
+                      poster="../assets/images/cover-formation.png"
+                      aria-label="Clip vidéo d'introduction de 20 secondes : Créer un CV optimisé par IA"
+                    >
+                      <source src="../assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4" type="video/mp4">
+                      Votre navigateur ne prend pas en charge la lecture vidéo HTML5. <a href="../assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4" download="E3_Scene_01_Introduction_20s_FINAL.mp4">Télécharger le clip d'introduction (MP4)</a>.
+                    </video>
+                  </div>
+                  <div class="video-meta">
+                    <span>Fichier : <code>E3_Scene_01_Introduction_20s_FINAL.mp4</code></span>
+                    <a href="../assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4" download="E3_Scene_01_Introduction_20s_FINAL.mp4">Télécharger (MP4)</a>
+                  </div>
+                </article>
               </div>
             </section>
 
@@ -525,20 +596,21 @@ Signale toute information qui devrait être confirmée avant utilisation dans un
           <p><strong>Formation :</strong> Créer un CV optimisé par IA (18 minutes)</p>
         </div>
         <div class="footer-col">
-          <h3>Mentions IA et crédits</h3>
+          <h3>Crédits, outils et médias</h3>
           <p>
-            Outil étudié : ChatGPT. Démonstration réalisée sur le profil entièrement fictif d'Alex Martin (aucune donnée personnelle réelle utilisée). L'apprenant vérifie chaque proposition et conserve la décision finale.
+            Outil d'IA étudié : ChatGPT (démonstration sur le profil fictif d'Alex Martin, zéro donnée personnelle). Médias intégrés : 2 vidéos MP4, 4 illustrations PNG, Handout PDF, Quiz final officiel Google Forms et Quiz d'entraînement HTML.
           </p>
         </div>
         <div class="footer-col">
-          <h3>Navigation et sources</h3>
+          <h3>Navigation et sources officielles</h3>
           <ul>
             <li><a href="../index.html">Accueil de la formation</a></li>
             <li><a href="module-1.html">Module 1 : Diagnostiquer son CV (5 min)</a></li>
             <li><a href="module-2.html">Module 2 : Améliorer son CV avec ChatGPT (7 min)</a></li>
             <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV (6 min)</a></li>
             <li><a href="../assets/docs/E3_Handout_CV_IA_FINAL.pdf" target="_blank" rel="noopener">Handout PDF officiel</a></li>
-            <li><span>Sources documentaires : référentiel BTS SIO et documentation ÉSTIAM (Lab 2).</span></li>
+            <li><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target="_blank" rel="noopener">Onisep - BTS SIO option B (SLAM)</a></li>
+            <li><a href="https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative" target="_blank" rel="noopener">CNIL - Utiliser un système d'IA générative</a></li>
           </ul>
         </div>
       </div>
