@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Module 3 : Vérifier et finaliser son CV (6 minutes) - Créer un CV optimisé par IA.">
+  <meta name="description" content="Module 3 : Vérifier et finaliser son CV (6 minutes) et Quiz d'évaluation (8 questions) - Créer un CV optimisé par IA.">
   <title>Module 3 : Vérifier et finaliser son CV | Créer un CV optimisé par IA</title>
+  <!-- Chargement de la police unique Merriweather (variable 300 à 900, normal et italique) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
   <!-- Feuille de style principale -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -18,7 +22,7 @@
       <a href="../index.html" class="site-brand">
         <span class="brand-badge">ÉSTIAM AI Advanced</span>
         <span class="brand-title">Créer un CV optimisé par IA</span>
-        <span class="brand-scope">Périmètre : Améliorer un CV existant avec ChatGPT</span>
+        <span class="brand-scope">Améliorer un CV existant avec ChatGPT</span>
       </a>
 
       <!-- Bouton d'ouverture/fermeture du menu sur mobile -->
@@ -34,13 +38,14 @@
         <span class="nav-toggle-icon" aria-hidden="true"></span>
       </button>
 
-      <!-- Navigation vers l'accueil et les trois modules -->
+      <!-- Navigation vers l'accueil, les trois modules et le quiz -->
       <nav id="navigation-principale" class="site-nav" aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html" class="nav-link">Accueil</a></li>
           <li><a href="module-1.html" class="nav-link">Module 1</a></li>
           <li><a href="module-2.html" class="nav-link">Module 2</a></li>
           <li><a href="module-3.html" class="nav-link" aria-current="page">Module 3</a></li>
+          <li><a href="#quiz-final" class="nav-link">Quiz</a></li>
         </ul>
       </nav>
     </div>
@@ -91,7 +96,7 @@
                 <ul class="sidebar-list">
                   <li>
                     <a href="../index.html" class="sidebar-link">
-                      <span>Accueil et concept</span>
+                      <span>Accueil</span>
                     </a>
                   </li>
                   <li>
@@ -102,7 +107,7 @@
                   </li>
                   <li>
                     <a href="module-2.html" class="sidebar-link">
-                      <span>2. Améliorer son CV avec l'IA</span>
+                      <span>2. Améliorer avec ChatGPT</span>
                       <span class="sidebar-time">7 min</span>
                     </a>
                   </li>
@@ -110,6 +115,12 @@
                     <a href="module-3.html" class="sidebar-link" aria-current="page">
                       <span>3. Vérifier et finaliser</span>
                       <span class="sidebar-time">6 min</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#quiz-final" class="sidebar-link">
+                      <span>Quiz d'évaluation</span>
+                      <span class="sidebar-time">8 questions</span>
                     </a>
                   </li>
                 </ul>
@@ -125,7 +136,8 @@
                   <li><a href="#sequence-4" class="sidebar-link">Étape 4 : Avant / Après</a></li>
                   <li><a href="#sequence-5" class="sidebar-link">Étape 5 : Exercice &amp; Checklist</a></li>
                   <li><a href="#sequence-6" class="sidebar-link">Étape 6 : Conclusion</a></li>
-                  <li><a href="#quiz-final" class="sidebar-link">Quiz final &amp; Ressources</a></li>
+                  <li><a href="#quiz-final" class="sidebar-link">Quiz interactif (8 questions)</a></li>
+                  <li><a href="#ressources-module-3" class="sidebar-link">Handout PDF et formulaire</a></li>
                 </ul>
               </div>
             </div>
@@ -168,7 +180,7 @@
               </p>
             </section>
 
-            <!-- Étape 2 (Séquence 2) - Les trois contrôles essentiels -->
+            <!-- Étape 2 (Séquence 2) - Les trois contrôles essentiels + Illustration réelle (Priorité 3) -->
             <section id="sequence-2" class="sequence-block" aria-labelledby="titre-seq-2">
               <div class="sequence-header">
                 <h2 id="titre-seq-2" class="sequence-title">Étape 2 - Les trois contrôles essentiels</h2>
@@ -197,6 +209,21 @@
                   </p>
                 </div>
               </div>
+
+              <!-- Illustration réelle du Module 3 : Vérification -->
+              <figure class="module-visual-figure">
+                <img
+                  src="../assets/images/module-3-verification.png"
+                  alt="Schéma des trois contrôles de vérification avant envoi du CV : exactitude des faits, précision des niveaux et pertinence de l'organisation"
+                  width="1672"
+                  height="941"
+                  loading="lazy"
+                  class="module-visual-img"
+                >
+                <figcaption class="module-visual-caption">
+                  Repère visuel du Module 3 : vérifier l'exactitude, la précision et la pertinence avant de valider le CV final.
+                </figcaption>
+              </figure>
             </section>
 
             <!-- Étape 3 (Séquence 3) - Vérifier le résultat ChatGPT -->
@@ -240,11 +267,11 @@
 
               <!-- Marqueur CHECK conservé conformément à la consigne de traçabilité -->
               <p class="check-marker">
-                CHECK: vérifier l'intitulé officiel du BTS Services informatiques aux organisations (SIO) et de l'option Solutions logicielles et applications métiers (SLAM) lors du fact-check (Lab 2).
+                <strong>Point de contrôle documentaire (CHECK) :</strong> vérifier l'intitulé officiel du BTS Services informatiques aux organisations (SIO) et de l'option Solutions logicielles et applications métiers (SLAM) lors du fact-check (Lab 2).
               </p>
             </section>
 
-            <!-- Étape 4 (Séquence 4) - Préparer la version corrigée et Comparaison Avant / Après -->
+            <!-- Étape 4 (Séquence 4) - Comparaison Avant / Après et CV à une colonne (Priorité 4) -->
             <section id="sequence-4" class="sequence-block" aria-labelledby="titre-seq-4">
               <div class="sequence-header">
                 <h2 id="titre-seq-4" class="sequence-title">Étape 4 - Comparaison Avant / Après et version finalisée</h2>
@@ -289,17 +316,17 @@
                 </table>
               </div>
 
-              <!-- Comparaison visuelle complète des deux CV fictifs avec mention externe -->
-              <h3 class="subheading">Comparaison complète : CV initial et CV final d'Alex Martin</h3>
+              <!-- Affichage professionnel des deux CV fictifs à une colonne avec mention externe -->
+              <h3 class="subheading">Documents complets à une colonne : CV initial et CV final vérifié</h3>
               <p class="demo-cv-notice">
-                Mention pédagogique externe : Alex Martin est un personnage fictif. Les deux documents présentés ci-dessous servent exclusivement à la démonstration pédagogique et ne contiennent aucune donnée personnelle réelle.
+                <strong>Mention pédagogique externe :</strong> Alex Martin est un personnage entièrement fictif. Les deux documents présentés ci-dessous servent exclusivement à la démonstration pédagogique et restent réutilisables comme support d'exercice sans aucune donnée personnelle réelle.
               </p>
 
-              <div class="cv-comparison-grid">
-                <!-- CV Initial -->
+              <div class="cv-comparison-stack">
+                <!-- CV Initial (1 colonne) -->
                 <figure class="demo-cv-container" aria-labelledby="legende-cv-avant">
                   <figcaption id="legende-cv-avant" class="cv-caption-before">
-                    Avant : CV initial (Diagnostic du Module 1)
+                    Document 1 - Avant : CV initial d'Alex Martin (Diagnostic du Module 1)
                   </figcaption>
                   <div class="demo-cv-document" role="region" aria-label="CV initial d'Alex Martin">
                     <div class="cv-sheet-header">
@@ -340,12 +367,18 @@
                   </div>
                 </figure>
 
-                <!-- CV Final corrigé -->
+                <!-- CV Final corrigé et vérifié (1 colonne, mise en forme professionnelle soignée) -->
                 <figure class="demo-cv-container" aria-labelledby="legende-cv-apres">
-                  <figcaption id="legende-cv-apres" class="cv-caption-after">
-                    Après : CV final vérifié (Module 3)
-                  </figcaption>
-                  <div class="demo-cv-document" role="region" aria-label="CV final amélioré et vérifié d'Alex Martin">
+                  <div class="cv-toolbar">
+                    <figcaption id="legende-cv-apres" class="cv-caption-after">
+                      <span>Document 2 - Après : CV final vérifié d'Alex Martin</span>
+                      <span class="verified-pill">Étape vérifiée</span>
+                    </figcaption>
+                    <button type="button" class="btn btn-secondary copy-btn" data-print-cv>
+                      Imprimer le CV vérifié
+                    </button>
+                  </div>
+                  <div class="demo-cv-document cv-final-verified" role="region" aria-label="CV final amélioré et vérifié d'Alex Martin">
                     <div class="cv-sheet-header">
                       <p class="cv-sheet-name">ALEX MARTIN</p>
                       <p class="cv-sheet-role">Étudiant en BTS SIO, option SLAM - Recherche d'alternance en développement web</p>
@@ -359,7 +392,7 @@
                     </div>
                     <div class="cv-sheet-section">
                       <h4>Formation</h4>
-                      <p>2025 - 2027 : BTS Services informatiques aux organisations (SIO), option SLAM</p>
+                      <p><strong>2025 - 2027 : BTS Services informatiques aux organisations (SIO), option SLAM</strong></p>
                       <p>Formation en cours</p>
                     </div>
                     <div class="cv-sheet-section">
@@ -512,30 +545,333 @@
               </div>
             </section>
 
-            <!-- Emplacements discrets pour le Quiz final et les ressources -->
+            <!-- PRIORITÉ 5 : Quiz interactif véritable de 8 questions (4 niveaux de difficulté) -->
             <section id="quiz-final" class="sequence-block" aria-labelledby="titre-quiz-m3">
               <div class="sequence-header">
-                <h2 id="titre-quiz-m3" class="sequence-title">Quiz final et ressources téléchargeables</h2>
+                <h2 id="titre-quiz-m3" class="sequence-title">Quiz d'évaluation des acquis (8 questions)</h2>
+                <span class="sequence-timing">4 niveaux de difficulté</span>
+              </div>
+              <p>
+                Testez votre maîtrise des trois modules à travers ces huit questions progressives (Facile, Moyen, Difficile, Expert). Aucune donnée personnelle n'est collectée.
+              </p>
+
+              <div class="quiz-status-bar">
+                <span id="quiz-progress" aria-live="polite">Progression : 0 sur 8 questions renseignées</span>
+                <span class="muted-note">Une seule réponse exacte par question</span>
+              </div>
+
+              <form id="quiz-form" class="quiz-container" novalidate>
+                <!-- Q1 - Niveau Facile -->
+                <fieldset class="quiz-question-card" id="quiz-card-1">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 1 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Facile</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    1. Dans le CV initial d'Alex Martin, quel est le problème principal du titre « Étudiant » ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q1-a">
+                      <input type="radio" id="q1-a" name="q1" value="a" data-quiz-question="1" data-correct="true">
+                      <span>Il manque de précision (il n'indique ni la formation suivie ni l'alternance recherchée).</span>
+                    </label>
+                    <label class="quiz-option-label" for="q1-b">
+                      <input type="radio" id="q1-b" name="q1" value="b" data-quiz-question="1">
+                      <span>Il est trop long pour être lu par un recruteur.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q1-c">
+                      <input type="radio" id="q1-c" name="q1" value="c" data-quiz-question="1">
+                      <span>Il interdit d'ajouter une rubrique Formation dans le CV.</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>Un bon titre de CV précise immédiatement la formation préparée (BTS SIO option SLAM) et l'objectif recherché (alternance en développement web).
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- Q2 - Niveau Facile -->
+                <fieldset class="quiz-question-card" id="quiz-card-2">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 2 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Facile</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    2. Quels sont les trois critères du diagnostic étudiés dans le Module 1 ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q2-a">
+                      <input type="radio" id="q2-a" name="q2" value="a" data-quiz-question="2">
+                      <span>Longueur, couleurs et originalité graphique.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q2-b">
+                      <input type="radio" id="q2-b" name="q2" value="b" data-quiz-question="2" data-correct="true">
+                      <span>Clarté, structure, précision.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q2-c">
+                      <input type="radio" id="q2-c" name="q2" value="c" data-quiz-question="2">
+                      <span>Automatisation, vitesse de génération et score algorithmique.</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>Le diagnostic repose sur trois repères : la clarté de l'objectif, la structure logique des rubriques et la précision des compétences et projets.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- Q3 - Niveau Moyen -->
+                <fieldset class="quiz-question-card" id="quiz-card-3">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 3 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Moyen</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    3. Quels éléments sont nécessaires pour construire un prompt structuré efficace dans le Module 2 ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q3-a">
+                      <input type="radio" id="q3-a" name="q3" value="a" data-quiz-question="3">
+                      <span>Uniquement la phrase « Améliore mon CV pour qu'il soit parfait ».</span>
+                    </label>
+                    <label class="quiz-option-label" for="q3-b">
+                      <input type="radio" id="q3-b" name="q3" value="b" data-quiz-question="3" data-correct="true">
+                      <span>Contexte, faits confirmés, éléments à améliorer, contraintes et format souhaité.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q3-c">
+                      <input type="radio" id="q3-c" name="q3" value="c" data-quiz-question="3">
+                      <span>Les coordonnées personnelles complètes du candidat et une demande d'invention libre.</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>Les cinq blocs (contexte, faits confirmés, éléments ciblés, contraintes de véracité et format attendu) guident ChatGPT tout en bloquant l'invention.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- Q4 - Niveau Moyen -->
+                <fieldset class="quiz-question-card" id="quiz-card-4">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 4 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Moyen</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    4. Comment présenter honnêtement une connaissance débutante en JavaScript sur son CV ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q4-a">
+                      <input type="radio" id="q4-a" name="q4" value="a" data-quiz-question="4">
+                      <span>« Expert JavaScript full-stack ».</span>
+                    </label>
+                    <label class="quiz-option-label" for="q4-b">
+                      <input type="radio" id="q4-b" name="q4" value="b" data-quiz-question="4" data-correct="true">
+                      <span>« Bases de JavaScript ».</span>
+                    </label>
+                    <label class="quiz-option-label" for="q4-c">
+                      <input type="radio" id="q4-c" name="q4" value="c" data-quiz-question="4">
+                      <span>« Maîtrise avancée de tous les frameworks JavaScript ».</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>Indiquer « Bases de JavaScript » nomme précisément la technologie tout en respectant le niveau réel d'un étudiant débutant.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- Q5 - Niveau Difficile -->
+                <fieldset class="quiz-question-card" id="quiz-card-5">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 5 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Difficile</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    5. ChatGPT affirme qu'un site fictif a reçu 500 utilisateurs, alors qu'aucun chiffre n'est connu. Que faire ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q5-a">
+                      <input type="radio" id="q5-a" name="q5" value="a" data-quiz-question="5">
+                      <span>Conserver ce chiffre car il rend le CV plus impressionnant.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q5-b">
+                      <input type="radio" id="q5-b" name="q5" value="b" data-quiz-question="5" data-correct="true">
+                      <span>Retirer cette affirmation non vérifiée.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q5-c">
+                      <input type="radio" id="q5-c" name="q5" value="c" data-quiz-question="5">
+                      <span>Augmenter le chiffre à 1 000 utilisateurs pour renforcer l'effet.</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>Tout résultat chiffré inventé par l'IA doit être retiré : seules les réalisations réellement vérifiables doivent figurer sur le CV.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- Q6 - Niveau Difficile -->
+                <fieldset class="quiz-question-card" id="quiz-card-6">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 6 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Difficile</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    6. ChatGPT affirme que le site d'Alex fonctionne sur tous les appareils sans preuve de test. Que faire ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q6-a">
+                      <input type="radio" id="q6-a" name="q6" value="a" data-quiz-question="6" data-correct="true">
+                      <span>Demander une confirmation et éviter l'affirmation absolue.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q6-b">
+                      <input type="radio" id="q6-b" name="q6" value="b" data-quiz-question="6">
+                      <span>Laisser l'affirmation telle quelle sans vérifier le projet.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q6-c">
+                      <input type="radio" id="q6-c" name="q6" value="c" data-quiz-question="6">
+                      <span>Supprimer entièrement la rubrique Projet scolaire du CV.</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>En l'absence de test confirmé sur tous les appareils, on évite toute formule absolue et on vérifie auprès du candidat ce qui a réellement été réalisé.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- Q7 - Niveau Expert -->
+                <fieldset class="quiz-question-card" id="quiz-card-7">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 7 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Expert</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    7. ChatGPT annonce un score ATS de 92 % sans outil ni méthode de mesure vérifiable. Que faire ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q7-a">
+                      <input type="radio" id="q7-a" name="q7" value="a" data-quiz-question="7">
+                      <span>Inscrire ce pourcentage de 92 % dans l'en-tête du CV.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q7-b">
+                      <input type="radio" id="q7-b" name="q7" value="b" data-quiz-question="7" data-correct="true">
+                      <span>Ne pas présenter ce score comme un résultat officiel ou mesuré.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q7-c">
+                      <input type="radio" id="q7-c" name="q7" value="c" data-quiz-question="7">
+                      <span>Considérer que ce chiffre garantit automatiquement un entretien d'embauche.</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>Un modèle de langage génère du texte prédictif : un pourcentage annoncé sans outil ni protocole de mesure vérifiable n'a aucune valeur officielle.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- Q8 - Niveau Expert -->
+                <fieldset class="quiz-question-card" id="quiz-card-8">
+                  <div class="quiz-question-header">
+                    <span class="quiz-q-number">Question 8 sur 8</span>
+                    <span class="quiz-level-tag">Difficulté : Expert</span>
+                  </div>
+                  <legend class="quiz-question-legend">
+                    8. Avant de soumettre son CV à une IA générative, quelle précaution de confidentialité faut-il adopter ?
+                  </legend>
+                  <div class="quiz-options-list">
+                    <label class="quiz-option-label" for="q8-a">
+                      <input type="radio" id="q8-a" name="q8" value="a" data-quiz-question="8">
+                      <span>Ajouter son adresse postale complète, son numéro de téléphone et ses pièces d'identité.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q8-b">
+                      <input type="radio" id="q8-b" name="q8" value="b" data-quiz-question="8" data-correct="true">
+                      <span>Limiter les données personnelles et anonymiser la copie lorsque c'est possible.</span>
+                    </label>
+                    <label class="quiz-option-label" for="q8-c">
+                      <input type="radio" id="q8-c" name="q8" value="c" data-quiz-question="8">
+                      <span>Publier ses coordonnées personnelles sur un forum public avant d'interroger l'IA.</span>
+                    </label>
+                  </div>
+                  <div class="quiz-feedback" hidden>
+                    <p>
+                      <strong class="quiz-feedback-status"></strong>La protection des données personnelles impose de retirer les coordonnées privées (téléphone, adresse, e-mail personnel) avant d'envoyer un texte à un service d'IA.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <div class="quiz-actions">
+                  <button type="submit" class="btn btn-primary" id="quiz-submit">
+                    Valider mes 8 réponses
+                  </button>
+                  <button type="button" class="btn btn-secondary" id="quiz-reset">
+                    Recommencer
+                  </button>
+                </div>
+
+                <div id="quiz-result" class="quiz-result-box" role="status" aria-live="polite" tabindex="-1" hidden></div>
+              </form>
+            </section>
+
+            <!-- PRIORITÉ 5 & 6 : Ressources du Module 3, Handout PDF réel et emplacement distinct pour questionnaire externe Tally / Google Forms -->
+            <section id="ressources-module-3" class="sequence-block" aria-labelledby="titre-ressources-m3">
+              <div class="sequence-header">
+                <h2 id="titre-ressources-m3" class="sequence-title">Handout PDF, capsules vidéo et formulaire externe</h2>
                 <span class="sequence-timing">Fin de parcours</span>
               </div>
+              <p class="muted-note">
+                L'accès au Handout PDF est libre et indépendant de votre score au quiz ci-dessus :
+              </p>
               <div class="discreet-resources-grid">
-                <div class="placeholder-box">
-                  <span class="placeholder-badge">En préparation</span>
-                  <p class="placeholder-notice">
-                    <strong>Quiz final :</strong> emplacement réservé au questionnaire final d'évaluation des acquis des 3 modules.
-                  </p>
+                <!-- Handout PDF réel -->
+                <div class="resource-card is-available">
+                  <div>
+                    <span class="placeholder-badge is-ready">Disponible (PDF)</span>
+                    <p class="placeholder-notice">
+                      <strong>Handout PDF officiel :</strong> fiche mémo récapitulative complète (3 critères de diagnostic, prompt structuré en 5 blocs et checklist en 10 points).
+                    </p>
+                  </div>
+                  <div class="resource-actions">
+                    <a
+                      href="../assets/docs/E3_Handout_CV_IA_FINAL.pdf"
+                      class="btn btn-primary copy-btn"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Consulter le PDF
+                    </a>
+                    <a
+                      href="../assets/docs/E3_Handout_CV_IA_FINAL.pdf"
+                      class="btn btn-secondary copy-btn"
+                      download="E3_Handout_CV_IA_FINAL.pdf"
+                    >
+                      Télécharger
+                    </a>
+                  </div>
                 </div>
-                <div class="placeholder-box">
-                  <span class="placeholder-badge">En préparation</span>
-                  <p class="placeholder-notice">
-                    <strong>Handout PDF :</strong> fiche mémo récapitulative téléchargeable dans <code>assets/</code>.
-                  </p>
+
+                <!-- Emplacement distinct pour questionnaire externe officiel Tally / Google Forms -->
+                <div id="formulaire-externe-lab" class="placeholder-box">
+                  <div>
+                    <span class="placeholder-badge">Emplacement Tally / Google Forms</span>
+                    <p class="placeholder-notice">
+                      <strong>Questionnaire externe officiel (Lab) :</strong> cet encadré distinct est réservé à l'intégration du lien externe Tally ou Google Forms dès sa publication.
+                    </p>
+                  </div>
                 </div>
+
+                <!-- Emplacements vidéo clairement identifiés -->
                 <div class="placeholder-box">
-                  <span class="placeholder-badge">En préparation</span>
-                  <p class="placeholder-notice">
-                    <strong>Capsule vidéo :</strong> synthèse vidéo de clôture dans <code>assets/</code>.
-                  </p>
+                  <div>
+                    <span class="placeholder-badge">En attente des fichiers .mp4</span>
+                    <p class="placeholder-notice">
+                      <strong>1. Clip IA d'introduction (20 s) :</strong> <code>assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4</code>.
+                    </p>
+                    <p class="placeholder-notice">
+                      <strong>2. Vidéo de leçon complète :</strong> <code>assets/videos/E3_Lesson_Video_FINAL.mp4</code>.
+                    </p>
+                  </div>
                 </div>
               </div>
             </section>
@@ -543,7 +879,7 @@
             <!-- Navigation séquentielle entre les pages -->
             <nav class="module-pagination" aria-label="Navigation entre les modules">
               <a href="module-2.html" class="btn btn-secondary" rel="prev">
-                &larr; Précédent : Module 2 - Améliorer son CV avec l'IA (7 minutes)
+                &larr; Précédent : Module 2 - Améliorer son CV avec ChatGPT (7 minutes)
               </a>
               <a href="../index.html" class="btn btn-primary">
                 Retour à l'accueil de la formation
@@ -576,9 +912,10 @@
           <ul>
             <li><a href="../index.html">Accueil de la formation</a></li>
             <li><a href="module-1.html">Module 1 : Diagnostiquer son CV (5 min)</a></li>
-            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA (7 min)</a></li>
+            <li><a href="module-2.html">Module 2 : Améliorer son CV avec ChatGPT (7 min)</a></li>
             <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV (6 min)</a></li>
-            <li><span>Sources documentaires : en cours de consolidation (Lab 2).</span></li>
+            <li><a href="../assets/docs/E3_Handout_CV_IA_FINAL.pdf" target="_blank" rel="noopener">Handout PDF officiel</a></li>
+            <li><span>Sources documentaires : référentiel BTS SIO et documentation ÉSTIAM (Lab 2).</span></li>
           </ul>
         </div>
       </div>

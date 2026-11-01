@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Module 1 : Diagnostiquer son CV (5 minutes) - Créer un CV optimisé par IA.">
   <title>Module 1 : Diagnostiquer son CV | Créer un CV optimisé par IA</title>
+  <!-- Chargement de la police unique Merriweather (variable 300 à 900, normal et italique) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
   <!-- Feuille de style principale -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -18,7 +22,7 @@
       <a href="../index.html" class="site-brand">
         <span class="brand-badge">ÉSTIAM AI Advanced</span>
         <span class="brand-title">Créer un CV optimisé par IA</span>
-        <span class="brand-scope">Périmètre : Améliorer un CV existant avec ChatGPT</span>
+        <span class="brand-scope">Améliorer un CV existant avec ChatGPT</span>
       </a>
 
       <!-- Bouton d'ouverture/fermeture du menu sur mobile -->
@@ -34,13 +38,14 @@
         <span class="nav-toggle-icon" aria-hidden="true"></span>
       </button>
 
-      <!-- Navigation vers l'accueil et les trois modules -->
+      <!-- Navigation vers l'accueil, les trois modules et le quiz -->
       <nav id="navigation-principale" class="site-nav" aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html" class="nav-link">Accueil</a></li>
           <li><a href="module-1.html" class="nav-link" aria-current="page">Module 1</a></li>
           <li><a href="module-2.html" class="nav-link">Module 2</a></li>
           <li><a href="module-3.html" class="nav-link">Module 3</a></li>
+          <li><a href="module-3.html#quiz-final" class="nav-link">Quiz</a></li>
         </ul>
       </nav>
     </div>
@@ -91,7 +96,7 @@
                 <ul class="sidebar-list">
                   <li>
                     <a href="../index.html" class="sidebar-link">
-                      <span>Accueil et concept</span>
+                      <span>Accueil</span>
                     </a>
                   </li>
                   <li>
@@ -102,7 +107,7 @@
                   </li>
                   <li>
                     <a href="module-2.html" class="sidebar-link">
-                      <span>2. Améliorer son CV avec l'IA</span>
+                      <span>2. Améliorer avec ChatGPT</span>
                       <span class="sidebar-time">7 min</span>
                     </a>
                   </li>
@@ -110,6 +115,12 @@
                     <a href="module-3.html" class="sidebar-link">
                       <span>3. Vérifier et finaliser</span>
                       <span class="sidebar-time">6 min</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="module-3.html#quiz-final" class="sidebar-link">
+                      <span>Quiz d'évaluation</span>
+                      <span class="sidebar-time">8 questions</span>
                     </a>
                   </li>
                 </ul>
@@ -125,7 +136,7 @@
                   <li><a href="#sequence-3" class="sidebar-link">Étape 3 : Analyse guidée</a></li>
                   <li><a href="#sequence-4" class="sidebar-link">Étape 4 : Exercice pratique</a></li>
                   <li><a href="#sequence-5" class="sidebar-link">Étape 5 : Synthèse</a></li>
-                  <li><a href="#supports-module-1" class="sidebar-link">Médias et ressources</a></li>
+                  <li><a href="#supports-module-1" class="sidebar-link">Handout PDF et médias</a></li>
                 </ul>
               </div>
             </div>
@@ -168,7 +179,7 @@
               </p>
             </section>
 
-            <!-- Étape 2 (Séquence 2) - Trois critères pour analyser un CV -->
+            <!-- Étape 2 (Séquence 2) - Trois critères pour analyser un CV + Illustration réelle (Priorité 3) -->
             <section id="sequence-2" class="sequence-block" aria-labelledby="titre-seq-2">
               <div class="sequence-header">
                 <h2 id="titre-seq-2" class="sequence-title">Étape 2 - Trois critères simples pour analyser un CV</h2>
@@ -198,29 +209,52 @@
                   </p>
                 </div>
               </div>
+
+              <!-- Illustration réelle du Module 1 : Diagnostic -->
+              <figure class="module-visual-figure">
+                <img
+                  src="../assets/images/module-1-diagnostic.png"
+                  alt="Schéma récapitulatif des trois critères du diagnostic d'un CV : clarté du titre, structure des rubriques et précision des compétences"
+                  width="1672"
+                  height="941"
+                  loading="lazy"
+                  class="module-visual-img"
+                >
+                <figcaption class="module-visual-caption">
+                  Repère visuel du Module 1 : analyser son CV selon la clarté, la structure et la précision avant d'interroger ChatGPT.
+                </figcaption>
+              </figure>
+
               <div class="vigilance-box" role="note">
-                <span class="vigilance-label">Point de vigilance</span>
+                <span class="vigilance-label">Point d'attention</span>
                 <p>
                   Diagnostiquer son CV ne consiste jamais à inventer des compétences supplémentaires, mais à repérer ce qui existe déjà et mérite d'être expliqué avec précision.
                 </p>
               </div>
             </section>
 
-            <!-- Support de démonstration : CV initial d'Alex Martin (avec mention externe obligatoire) -->
+            <!-- Support de démonstration : CV initial d'Alex Martin à une colonne (Priorité 4) -->
             <section id="cv-alex-initial" class="sequence-block" aria-labelledby="titre-cv-initial">
               <div class="sequence-header">
                 <h2 id="titre-cv-initial" class="sequence-title">Support d'étude - CV initial d'Alex Martin</h2>
                 <span class="sequence-timing">Document fil rouge</span>
               </div>
               <!--
-                Conformément aux consignes pédagogiques, la mention indiquant qu'Alex Martin
+                Conformément aux consignes pédagogiques (Priorité 4), la mention indiquant qu'Alex Martin
                 est un candidat fictif est placée dans <figcaption class="demo-cv-notice">,
                 à l'extérieur du bloc documentaire (.demo-cv-document).
               -->
               <figure class="demo-cv-container" aria-labelledby="mention-cv-fictif-m1">
                 <figcaption id="mention-cv-fictif-m1" class="demo-cv-notice">
-                  Mention pédagogique externe : Le CV ci-dessous est un support d'étude. Le candidat Alex Martin et son parcours sont entièrement fictifs ; aucune donnée personnelle réelle n'est utilisée.
+                  <strong>Mention pédagogique externe :</strong> Le CV ci-dessous est un support d'étude. Le candidat Alex Martin et son parcours sont entièrement fictifs ; aucune donnée personnelle réelle n'est utilisée.
                 </figcaption>
+
+                <div class="cv-toolbar">
+                  <span class="muted-note">Format d'étude : document à une colonne (version initiale avant diagnostic)</span>
+                  <button type="button" class="btn btn-secondary copy-btn" data-print-cv>
+                    Imprimer ce support d'étude
+                  </button>
+                </div>
 
                 <div class="demo-cv-document" role="region" aria-label="Contenu du CV initial d'Alex Martin">
                   <div class="cv-sheet-header">
@@ -361,29 +395,48 @@
               </div>
             </section>
 
-            <!-- Emplacements discrets pour médias et ressources facultatifs -->
+            <!-- Médias et Handout PDF réel du Module 1 -->
             <section id="supports-module-1" class="sequence-block" aria-labelledby="titre-supports-m1">
               <div class="sequence-header">
-                <h2 id="titre-supports-m1" class="sequence-title">Médias et ressources du Module 1</h2>
+                <h2 id="titre-supports-m1" class="sequence-title">Handout PDF et ressources du Module 1</h2>
                 <span class="sequence-timing">Compléments</span>
               </div>
               <div class="discreet-resources-grid">
+                <div class="resource-card is-available">
+                  <div>
+                    <span class="placeholder-badge is-ready">Disponible (PDF)</span>
+                    <p class="placeholder-notice">
+                      <strong>Handout PDF de la formation :</strong> retrouvez la grille des 3 critères de diagnostic dans la fiche récapitulative téléchargeable.
+                    </p>
+                  </div>
+                  <div class="resource-actions">
+                    <a
+                      href="../assets/docs/E3_Handout_CV_IA_FINAL.pdf"
+                      class="btn btn-primary copy-btn"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Consulter le PDF
+                    </a>
+                    <a
+                      href="../assets/docs/E3_Handout_CV_IA_FINAL.pdf"
+                      class="btn btn-secondary copy-btn"
+                      download="E3_Handout_CV_IA_FINAL.pdf"
+                    >
+                      Télécharger
+                    </a>
+                  </div>
+                </div>
                 <div class="placeholder-box">
-                  <span class="placeholder-badge">En préparation</span>
+                  <span class="placeholder-badge">En attente du fichier .mp4</span>
                   <p class="placeholder-notice">
-                    <strong>Vidéo facultative :</strong> capsule commentée du diagnostic dans <code>assets/</code>.
+                    <strong>Clip IA d'introduction (20 s) :</strong> emplacement prêt dans <code>assets/videos/E3_Scene_01_Introduction_20s_FINAL.mp4</code>.
                   </p>
                 </div>
                 <div class="placeholder-box">
-                  <span class="placeholder-badge">En préparation</span>
+                  <span class="placeholder-badge">En attente du fichier .mp4</span>
                   <p class="placeholder-notice">
-                    <strong>Illustration annotée :</strong> visuel du CV initial d'Alex Martin avec repères visuels.
-                  </p>
-                </div>
-                <div class="placeholder-box">
-                  <span class="placeholder-badge">En préparation</span>
-                  <p class="placeholder-notice">
-                    <strong>Fiche mémo PDF :</strong> grille des 3 critères de diagnostic téléchargeable.
+                    <strong>Vidéo de leçon :</strong> emplacement prêt dans <code>assets/videos/E3_Lesson_Video_FINAL.mp4</code>.
                   </p>
                 </div>
               </div>
@@ -395,7 +448,7 @@
                 &larr; Précédent : Retour à l'accueil
               </a>
               <a href="module-2.html" class="btn btn-primary" rel="next">
-                Suivant : Module 2 - Améliorer son CV avec l'IA (7 minutes) &rarr;
+                Suivant : Module 2 - Améliorer son CV avec ChatGPT (7 minutes) &rarr;
               </a>
             </nav>
           </article>
@@ -425,9 +478,10 @@
           <ul>
             <li><a href="../index.html">Accueil de la formation</a></li>
             <li><a href="module-1.html">Module 1 : Diagnostiquer son CV (5 min)</a></li>
-            <li><a href="module-2.html">Module 2 : Améliorer son CV avec l'IA (7 min)</a></li>
+            <li><a href="module-2.html">Module 2 : Améliorer son CV avec ChatGPT (7 min)</a></li>
             <li><a href="module-3.html">Module 3 : Vérifier et finaliser son CV (6 min)</a></li>
-            <li><span>Sources documentaires : en cours de consolidation (Lab 2).</span></li>
+            <li><a href="../assets/docs/E3_Handout_CV_IA_FINAL.pdf" target="_blank" rel="noopener">Handout PDF officiel</a></li>
+            <li><span>Sources documentaires : référentiel BTS SIO et documentation ÉSTIAM (Lab 2).</span></li>
           </ul>
         </div>
       </div>
